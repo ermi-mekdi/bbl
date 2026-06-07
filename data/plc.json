@@ -1,0 +1,552 @@
+{
+  "jerusalem": {
+    "id": "jerusalem",
+    "name1": "የሩሳሌም",
+    "nameE1": "Jerusalem",
+    "nameM1": " የሩሳሌም",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/yerusalemJesus.jpg",
+    "info": [""]
+  },
+  "olivet": {
+    "name1": "ደብረ ዘይቲ",
+    "nameE1": "Olivet",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/yerusalemJesus.jpg",
+    "info": [""]
+  },
+  "juda": {
+    "id": "juda",
+    "name1": " ይሁዳ",
+    "nameE1": "Juda",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/actsIsrael.jpg",
+    "info": [""]
+  },
+  "samaria": {
+    "name1": "ሰማርያ",
+    "nameE1": "Samaria",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/actsIsrael.jpg",
+    "info": [""]
+  },
+  "galilee": {
+    "name1": "ገሊላ",
+    "nameE1": "Galilee",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/actsIsrael.jpg",
+    "info": [""]
+  },
+  "upRoom": {
+    "name1": " ናብታ ደርቢ",
+    "nameE1": "upper room",
+    "nameM1": "ናብታ ድራር ፋሲካ ዝበልዑላ ደርቢዶ ትመስል?",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": ["bib.n.luk.c23.v12"],
+    "gMap": "",
+    "info": ["ሉቃስ 22:12 ንሱ ኸኣ እተነጽፈ ኣዳራሽ ኣብ ደርቢ ኼርእየኩም እዩ፡ ኣብኡውን ኣዳልዉ።"]
+  },
+  "akeldama": {
+    "name1": "አከልደማ",
+    "nameE1": "Akeldama",
+    "nameM1": " ግራት ደም",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "",
+    "info": [
+      "ማቴዎስ 27",
+      "6: ሊቃውንቲ ኻህናት ነቲ ኣቕራሽ ወሲዶም፡ ዋጋ ደም እዩ እሞ ናብ ሳጹን ምጽዋት ከነእትዎ ኣይግባእን፡ በሉ።",
+      "7: ተማኺሮም፡ መቓብር ኣጋይሽ ዚኸውን ግራት ሰራሕ መሬት ብእኡ ተሻየጡ።",
+      "8: ስለዚ ኸኣ እታ ግራት ክሳዕ ሎሚ ግራት ደም ትብሀል ኣላ።",
+      "9-10: እቲ ብነብዪ ኤርምያስ፡ዋጋ እቲ ደቂ እስራኤል ዝገምገምዎ ገምጋም ሰላሳ ቕርሺ ወሰዱ። ከምቲ እግዚኣብሄር ዝኣዘዘኒ፡ ንግራት ሰራሕ መሬትውን ሀብዎ፡እተባህለ ሽዑ ተፈጸመ።"
+    ]
+  },
+  "parthians": {
+    "name1": "ጰርቴን",
+    "nameE1": "Parthians",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/iran.jpg",
+    "info": [
+      "ሰፊሕ ሰሜናዊ ክፋል ናይ ሎሚ ኢራን፡ ቱርክመኒስታን፡ ገለ ክፋል ናይ ሎሚ ኣፍጋኒስታን፡ ገለ ክፋል ናይ ሎሚ ኣርመንያ"
+    ]
+  },
+  "mede": {
+    "name1": " ሜዶን",
+    "nameE1": "Mede",
+    "nameM1": "ማእከል",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/iran.jpg",
+    "info": [
+      " ኣብ ከባቢ ኣኽራናት ዛግሮስ",
+      "ሰፊሕ ሰሜናዊ ምዕራብ ናይ ሎሚ ኢራን፡",
+      "ቅድሚ ጰርቴን ንግስነት ነይርዎም",
+      "ዳሕራይ ግን ሜዶንን ፋርስን ዓቢ ግዝኣ ገይሮ ኣብ ግዜ ዳንኤል ከም ዝነበረ"
+    ]
+  },
+  "elamite": {
+    "name1": "ኤላም ",
+    "nameE1": "Elamite",
+    "nameM1": "ላዕሊ ወይ ዝበረኸ መሬት",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/iran.jpg",
+    "info": [
+      "The name Elamite refers to the people of the ancient civilization of Elam, which was located in the southwest of modern-day Iran."
+    ]
+  },
+  "mesopotamia": {
+    "name1": " ሜሶጶታሚያ",
+    "nameE1": "Mesopotamia",
+    "nameM1": "ኣብ መንጎ ኽልተ ርባ ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/abrhamMesopotamiaKenan.jpg",
+    "info": [
+      "ናይ ሎሚ ዒራቕ ",
+      "Mesopotamia is a historical region located in West Asia, nestled between the Tigris and Euphrates rivers. The name itself comes from Greek, meaning 'between rivers.'"
+    ]
+  },
+  "cappadocia": {
+    "name1": " ቀጶዶቅያ",
+    "nameE1": "Cappadocia",
+    "nameM1": "ታሕታይ ቦታ ወይ ሃገር",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/paul3.jpg",
+    "info": [
+      "Cappadocia is a stunning historical region located in central Turkey, primarily within the provinces of Nevşehir, Kayseri, Aksaray, Niğde, and Kırşehir"
+    ]
+  },
+  "pontus": {
+    "name1": " ጶንጦስ",
+    "nameE1": "Pontus",
+    "nameM1": "ባሕሪ ወይ እቲ ዓሚቕ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/paul3.jpg",
+    "info": [
+      "Pontus was an ancient region located along the southern coast of the Black Sea, in what is now northeastern Turkey"
+    ]
+  },
+  "phrygia": {
+    "name1": "ፍርግያ ",
+    "nameE1": "Phrygia",
+    "nameM1": "ከበሳ ወይ ኣኽራናት",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/paul3.jpg",
+    "info": [
+      "Phrygia was an ancient kingdom located in west-central Anatolia, which is part of modern-day Turkey. It stretched across the Anatolian plateau, with its heartland centered around the Sangarios (Sakarya) River."
+    ]
+  },
+  "pamphylia": {
+    "name1": " ጰምፊልያ",
+    "nameE1": "Pamphylia",
+    "nameM1": "ናይ ኩሎም ዓሌታት ሃገር",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/paul3.jpg",
+    "info": [
+      "Pamphylia was an ancient region located along the southern coast of Asia Minor, which corresponds to modern-day southern Turkey, specifically within the Antalya Province"
+    ]
+  },
+  "egypt": {
+    "name1": " ግብጺ",
+    "nameE1": "Egypt",
+    "nameM1": "ቤት ናይ መንፈስ ፓታህ(ስም መቕደስ መምፊስ)",
+    "name2": "ምስሪ",
+    "nameE2": "Misr",
+    "nameM2": "ዝተሓጽረት ሃገር፡ መንግስቲ",
+    "vers": [""],
+    "gMap": "../assets/kushLibyaIran.jpg",
+    "info": [
+      "Egypt is a country in North Africa, known for its ancient civilization and some of the world's most famous monuments, including the Great Pyramids of Giza and the Sphinx."
+    ]
+  },
+  "libya": {
+    "name1": " ሊብያ",
+    "nameE1": "Libya ",
+    "nameM1": " ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/kushLibyaIran.jpg",
+    "info": [""]
+  },
+  "cyrene": {
+    "name1": "ቀሬን ",
+    "nameE1": "Cyrene ",
+    "nameM1": "ልኡላውነት ወይ ልእልቲ ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/kushLibyaIran.jpg",
+    "info": [
+      "Cyrene was an ancient Greek colony located in northeastern Libya, in North Africa. Today, its ruins lie near the modern town of Shahhat, in the Jebel Akhdar (Green Mountain) region of Cyrenaica",
+      "home to a large and influential Jewish community"
+    ]
+  },
+  "rome": {
+    "name1": "ሮሜ",
+    "nameE1": "Rome ",
+    "nameM1": "ብርታዐ ወይ ጉልበት",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/romanEmpire.jpg",
+    "info": [""]
+  },
+  "cretans": {
+    "name1": "ቅሬጥስ ",
+    "nameE1": "Creta",
+    "nameM1": "ደሴት ወይ ዝተቆርጸ መሬት",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/paul3.jpg",
+    "info": [
+      "The Cretans are people from Crete, the largest island in Greece, located in the eastern Mediterranean Sea."
+    ]
+  },
+  "temple": {
+    "name1": "ቤተ መቅደስ",
+    "nameE1": "Temple",
+    "nameM1": "ታቦት ኣምላኽ ዝዓርፈሉ ቤት",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "https://maps.app.goo.gl/Tjo2tquCTZ2KgSQ3A",
+    "info": [
+      "ኣብ ብሉይ ኪዳን ፡ ሓደ ታቦት፡ ሓንቲ ቤተ መቅደስ",
+      "ብሰለሞን ዝተሃንጸት ቤተ መቅደስ፡",
+      "ኣብ ከተማ የሩሳሌም(ከተማ ዳዊት) ትርከብ።",
+      "ኣብ'ታ ዳዊት መስዋእቲ ክስውእ ዝዓደጋ መሬት።",
+      "ኣብ'ታ ኣብርሃም ንይስሓቅ ከም መስዋእቲ ዘቕረበሉ ቦታ (ሞርያ) እያ ዝተሃንጸት ።",
+      "ብ 586 ዓዓ ብግዜ ንጉስ ናብኮደናጾር ብባቢሎናውያን ዓንያ",
+      "ብ 516 ዓዓ ካልኣይ ግዜ ተሃኒጻ",
+      "ብ 70 ዓም ንካላኣይ ግዜ ብ ሮማውያን ዓንያ",
+      "ክሳብ ሕጂ ዓንያ ኣላ"
+    ]
+  },
+  "solomon": {
+    "id": "solomon",
+    "name1": " ገበላ ሰሎሞን",
+    "nameE1": " Solomon’s Porch",
+    "nameM1": "አዳራሽ  ሰሎሞን ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": ["ዮሃንስ 10:23"],
+    "gMap": "",
+    "info": [
+      "ብወገን ምብራቅ ናይ ቤት መቅደስ ዝርከብ ኮይኑ ንመምሃርን ንመካቲዕን መጸለይን ኣብቲ ግዜ ይጥቀሙሉ ነይሮም።",
+      "ሃዋርያት ነዚ ከም መስበኺ ይጥቀሙሉ ነይሮም"
+    ]
+  },
+  "beautiful": {
+    "name1": "ጽብቕቲ ደገ",
+    "nameE1": "Beautiful",
+    "nameM1": "ጽብቕቲ ደገ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "https://www.ritmeyer.com/2010/12/14/the-beautiful-gate-of-the-temple/",
+    "info": [
+      "እዛ ጽብቕቲ ደገ ኣብ መጽሓፍ ቅዱስ ሓንሳእ ጥራይ እያ ተጠቒሳ ዘላ፡",
+      "ብዛዕባኣ ካብ ዝረኣኽዎ ሓበሬታ ኣብ map ጠውቑ።"
+    ]
+  },
+  "cyprus": {
+    "name1": "ቆጵሮስ ",
+    "nameE1": "Cyprus",
+    "nameM1": "ሃብታም ብነሓስ  ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/acts1.jpg",
+    "info": [""]
+  },
+  "nazareth": {
+    "id": "nazareth",
+    "name1": "ናዝሬት",
+    "nameE1": "Nazareth",
+    "nameM1": "ጨንፈር፡  ሕሉው ቦታ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": ["ዮሃንስ 1:46"],
+    "gMap": "",
+    "info": [""]
+  },
+  "syria": {
+    "id": "syria",
+    "name1": "ሶርያ",
+    "nameE1": "Syria",
+    "nameM1": "ደቀባት፡ ትኽኢልካ ምኻድ፡ ሓጎስ፡ ምስሓብ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "https://ermi-mekdi.github.io/Acts/assets/acts1.jpg",
+    "info": [""]
+  },
+  "libertines": {
+    "id": "libertines",
+    "name1": "ሊቤርጢኖን ",
+    "nameE1": "Libertines",
+    "nameM1": "ውጹኣት ሓራ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "",
+    "info": [
+      "ቤት ጸሎት ካብ ቄሬኔዎንን ካብ እስክንድርያን ካብ ቂልቅያን ካብ እስያን ዝመጺኦም ዝመስረትዋ ይግመት",
+      "ምናልባት እዛ ቤት ጸሎት በቶም ካብ ባርነት ሓራ ዝወጹ ዝቆመት ትኸውን"
+    ]
+  },
+  "bethlehem": {
+    "id": "bethlehem",
+    "name1": "ቤት-ልሄም",
+    "nameE1": "Bethlehem",
+    "nameM1": " ቤት እንጌራ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "",
+    "info": [""]
+  },
+  "haran": {
+    "id": "haran",
+    "name1": "ካራን",
+    "nameE1": "Haran",
+    "nameM1": "መስቀላዊ መገዲ፡ ንግዳዊ መንገዲ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/abrhamMesopotamiaKenan.jpg",
+    "info": ["ናይ ሎሚ ቱርኪ ጥቓ ዶብ ምስ ሶርያ ትርከብ"]
+  },
+  "ituraea": {
+    "id": "ituraea",
+    "name1": "ኢጡርያ",
+    "nameE1": "Ituraea",
+    "nameM1": "ምሕጻር",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "",
+    "info": ["ናይ ሎሚ ደቡብ ሶርያን ሊባኖስን", "ከረን ሄርሞን"]
+  },
+  "trachonitis": {
+    "id": "trachonitis",
+    "name1": "ጥራኮኒቲስ",
+    "nameE1": " Trachonitis",
+    "nameM1": "ሓርፋፍ መሬት",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "",
+    "info": ["ናይ ሎሚ ደቡብ ሶርያን ምብራቕ ካብ ባሕሪ ገሊላ"]
+  },
+  "abilene": {
+    "id": "abilene",
+    "name1": "ኣቢለኔ ",
+    "nameE1": "Abilene",
+    "nameM1": "ቦታ ሳዕሪ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "",
+    "info": ["ናይ ሎሚ ደቡባዊ ምዕራብ ሶርያን ደቡብ ሊባኖስን"]
+  },
+  "alexandria": {
+    "id": "alexandria",
+    "name1": "እስክንድርያ",
+    "nameE1": "Alexandria",
+    "nameM1": "ሓላዊ ወዲሰብ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/kushLibyaIran.jpg",
+    "info": [
+      "ናይ ግብጺ ናብ ማእከላይ ባሕሪ ወገን ትርከብ ከተማ",
+      "ዓቢ ቤት ትምህርቲ ብስነመለኮት ዘለዋ",
+      "ኣጵሎስ እውን ኣብኣ እዩ ተማሂሩ"
+    ]
+  },
+  "cilicia": {
+    "id": "cilicia",
+    "name1": "ቂልቅያ",
+    "nameE1": "Cilicia",
+    "nameM1": "ምግምጣል፡ ተሪር ቦታ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/paul3.jpg",
+    "info": ["ኣብ ናይ ሎሚ ደቡብ ቱርኪ ትርከብ ዞባ", "ጳውሎስ ኣብዚ ዞባ ኣብ ከተማ ጠርሴስ እዩ ተወሊዱ"]
+  },
+  "asia": {
+    "id": "asia",
+    "name1": "እስያ",
+    "nameE1": "Asia",
+    "nameM1": "መሬት ምብራቕ ጸሓይ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/paul3.jpg",
+    "info": ["ዝዓበየ ክፋል ናይ ሎሚ ምዕራብ ቱርኪ "]
+  },
+  "midian": {
+    "name1": "ሚድያን",
+    "nameE1": "Midian",
+    "nameM1": "ቃልሲ ",
+    "name2": " ",
+    "nameE2": " ",
+    "nameM2": " ",
+    "vers": [""],
+    "gMap": "../assets/acts1.jpg",
+    "info": [
+      "ናይ ሎሚ ሰሜናዊ ምዕራብ ሱዑዲ ዓረብን ገለ ክፋል ዮርዳኖስን ",
+      "1 ዜና 1 32 ደቂ ቄጡራ፡ ሰበይቲ ወሰን ኣብራሃም ድማ፡ ንሳ ንዚምራንን ንዮቅሻንን ንመዳንን ንሚድያንን ንዪሽባቅን ንሿን ወለደት። ደቂ ዮቅሻን ከኣ፡ ሼባን ዴዳንን። 33 ደቂ ምድያን ድማ፡ ዔፋን ዔፈርን ሓኖክን ኣቢዳዕን ኤልዳዓን። እዚኣቶም ኲሎም ደቂ ቄጡራ እዮም።"
+    ]
+  },
+  "mountSinai": {
+    "id": "mountSinai",
+    "name1": "ደብረ ሲና",
+    "nameE1": "Mount Sinai",
+    "nameM1": "",
+    "name2": "ደብረ ሙሴ",
+    "nameE2": "Jabal Mūsā",
+    "nameM2": "ጎቦ፡ ታባ  ሙሴ",
+    "vers": [""],
+    "gMap": "../assets/acts1.jpg",
+    "info": [
+      "ሙሴ መጀመርያ ሓዊ ኣብኣሻኹ ቆጥቋጥ ዝረኣየሉ ቦታ",
+      "ዓሰርተ ትእዛዛት ዝሓዘ ጽላት ዝተቐበለሉ ቦታ",
+      "ኣብ ደቡባዊ ሸነኽ ሓውሲ ደሴት ሲና ይርከብ"
+    ]
+  },
+  "shechem": {
+    "id": "shechem",
+    "name1": "ሴኬም",
+    "nameE1": "Shechem",
+    "nameM1": "መንኩብ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/actsIsrael.jpg",
+    "info": [
+      "ኣብርሃም መሰውኢ ዝሰርሓሉ ዘፍ 12: 6-7",
+      "ያዕቆብ መሬት ዝዓደገሉ ዘፍ 33: 18-20",
+      "ኢያሱ ነቲ ህዝቢ ኪዳን ዘእተወሉ ኢያ 24: 25",
+      "ናይ ዮሴፍ ኣጽሚ ዝተቐብረሉ ኢያ 24: 32",
+      "ዳሕራይ ናይ ሳምራውያን ማእከል ኮይና",
+      "ናይ ሕጂ ስማ Nablus"
+    ]
+  },
+  "gaza": {
+    "id": "gaza",
+    "name1": "ጋዛ",
+    "nameE1": "Gaza",
+    "nameM1": "ብርታዐ፡ ተሪር ቦታ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/actsIsrael.jpg",
+    "info": []
+  },
+  "ethiopia": {
+    "id": "ethiopia",
+    "name1": "ኢትዮጵያ",
+    "nameE1": "Ethiopia",
+    "nameM1": "ዝሓረረ ገጽ ወይ ቆርበት",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [""],
+    "gMap": "../assets/kushLibyaIran.jpg",
+    "info": ["ናይ ሽዕኡ ኢትዮጵያ ማለት ካብ ግብጺ ንደቡብ ዘሎ እዩ።",
+      "ንግስነት ኢዮትጵያ ተባሂሉ ዘሎ ንንግስነት ኩሽ የመልክት።",
+      "ዋና ከተማ ድማ ሜሩ(Meroe) ትበሃል ኣብ ናይ ሕጂ ሱዳን ትርከብ።",
+      "እታ ከተማ ካብ ኣስታት 800 ዓዓ ክሳብ 350ዓም ሰባት ይነብሩላ ነይሮም።",
+      "ድሕሪ እዚ ምናልባት ኣብ ትሕቲ ንግስነት ኣክሱም ኣትያ ትኸውን ፡ ",
+    "ነዝያዳ ሓበሬታ<a href='https://en-wikipedia-org.translate.goog/wiki/Mero%C3%AB?_x_tr_sl=en&_x_tr_tl=nl&_x_tr_hl=nl&_x_tr_pto=sge`  target=`_blank'>ኣብዚ ጠውቑ</a>"]
+  },
+  "azotus": {
+  "id": "azotus",
+  "name1": "ኣዛጦን(ብግሪኽ)",
+  "nameE1": "Azotus",
+  "nameM1": "ዝተዓርደ፡ ጽኑዕ ቦታ",
+  "name2": "ኣሽዶድ (ብእብራይስጥ)",
+  "nameE2": "Ashdod",
+  "nameM2": "ዝተዓርደ፡ ጽኑዕ ቦታ",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/actsIsrael.jpg",
+  "info": [
+    "ኣሽዶድ ብእብራይስጥ",
+    "ኣዛጦን (ብግሪኽ)"
+  ]
+  }
+}

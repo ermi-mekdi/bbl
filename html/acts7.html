@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ti">
+  <head>
+    <title>ግብረ ሃዋርያት</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/faviacts.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  </head>
+  <body>
+    <div class="bo">
+      <div class="topnav">
+        <div class="selectChapter-wrapper">
+          <span class="next"><a href="./acts6.html" > ምዕራፍ 6</a></span>
+          <span class="chapter">ምዕራፍ </span>
+          <button class="selectChapter-btn" onclick="toggleChapterMenu()">7 ▼</button>
+          <span class="next"><a href="acts8.html" > ምዕራፍ 8</a></span>
+          <div class="selectChapter-menu" id="chapterMenu">
+            <a href="../index.html" class="selectChapter-item">መእተዊ</a>
+            <a href="./acts1.html" class="selectChapter-item"> 1</a>
+            <a href="./acts2.html" class="selectChapter-item" >2</a>
+            <a href="./acts3.html" class="selectChapter-item ">3</a>
+            <a href="./acts4.html" class="selectChapter-item" >4</a>
+            <a href="./acts5.html" class="selectChapter-item">5</a>
+            <a href="./acts6.html" class="selectChapter-item" >6</a>
+            <a href="./acts7.html" class="selectChapter-item" active>7</a>
+            <a href="./acts8.html" class="selectChapter-item">8</a>
+            <a href="./acts9.html" class="selectChapter-item">9</a>
+            <a href="./acts10.html" class="selectChapter-item">10</a>
+            <a href="./acts11.html" class="selectChapter-item">11</a>
+            <a href="./acts12.html" class="selectChapter-item"> 12</a>
+            <a href="./acts13.html" class="selectChapter-item">13</a>
+            <a href="./acts14.html" class="selectChapter-item">14</a>
+            <a href="./acts15.html" class="selectChapter-item">15</a>          
+            <a href="./acts16.html" class="selectChapter-item">16</a>
+            <a href="./acts17.html" class="selectChapter-item">17</a>
+            <a href="./acts18.html" class="selectChapter-item">18</a>
+            <a href="./acts19.html" class="selectChapter-item">19</a>
+            <a href="./acts20.html" class="selectChapter-item">20</a>
+            <a href="./acts21.html" class="selectChapter-item">21</a>            
+            <a href="./acts22.html" class="selectChapter-item">22</a>
+            <a href="./acts23.html" class="selectChapter-item">23</a>
+            <a href="./acts24.html" class="selectChapter-item">24</a>
+            <a href="./acts25.html" class="selectChapter-item">25</a>
+            <a href="./acts26.html" class="selectChapter-item">26</a>
+            <a href="./acts27.html" class="selectChapter-item">27</a>
+            <a href="./acts28.html" class="selectChapter-item">28</a>            
+          </div>
+        </div>        
+        <span id="dark-mode" onclick="dayNight()">&#9728;</span>
+      </div>
+      <p>
+        <h2 class="sub-chapter">እስጢፋኖስ ዘስምዖ ዘረባ</h2>
+        1 እቲ ሊቀ ኻህናት ከኣ፡ እዚ ነገር ከምኡ ድዩ፧ በሎ። <br />
+        2 ንሱ ግና በለ፡ ኣቱም ኣሕዋትናን ኣቦታትናን፡ ስምዑ። ነቦና 
+        <strong onclick="dP('abraham')">ኣብርሃም&#128104;</strong>፡ ገና ኣብ 
+        <strong onclick="dPlc('haran')">ካራን📍</strong> ከይተቐመጠ ኣብ 
+        <strong onclick="dPlc('mesopotamia')">መሰጶታምያ📍</strong>
+        ኸሎ፡ ኣምላኽ ክብሪ <b>ተራእዮ</b> እሞ፡ <br />
+        3 ካብ ምድርኻን ካብ ኣዝማድካን <b>ውጻእ</b>፡ ናብቲ ኣነ ዘርእየካ ምድሪ <b>ንዓ</b>፡ በሎ።<br />
+        4 ሽዑ ኻብ ምድሪ ከለዳውያን ወጺኡ ኣብ ካራን ተቐመጠ። ኣቦኡ ምስ ሞተ ኸኣ፡ ኣምላኽ ካብኡ ናብዚ ሕጂ ዘሎኹምዎ
+        ምድሪ <b>ኣግዐዞ</b>። <br />
+        5 ኣብኡ ድማ መርገጽ እግሪ ዚኣክል እኳ ርስቲ ኣይሀቦን፡ ውሉድ ዜብሉ ኽነሱስ፡ እቲ ምድሪ ንእኡን ብድሕሪኡውን
+        ንዘርኡን ከም ዘረስትዮ፡ <b>ኣተስፈዎ</b>።<br />
+        6 ኣምላኽ ድማ ከምዚ ኢሉ ተዛረበ፡ ዘርእኻ ኣብ ካልእ ምድሪ ስደተኛ ኪኸውን እዩ፡ ኪገዝእዎ ኣርባዕተ ሚእቲ
+        ዓመትውን ኬጽብቡሉ እዮም፡<br />
+        7 ነቶም ዚገዝእዎም ህዝቢ ኸኣ ኣነ ኽፈርዶም እየ፡ በለ ኣምላኽ፡ እንድሕርዚ ኻብኡ ኺወጹ እሞ ኣብዛ ስፍራ እዚኣ
+        <b>ኼገልግሉኒ</b> እዮም። <br />
+        8 ኪዳን ግዝረት ከኣ ሀቦ። ከምኡ ድማ <strong onclick="dP('isaac')">ንይስሃቅ&#128104;</strong> ወለዶ እሞ ኣብ ሳምነይቲ መዓልቲ ገዘሮ። ይስሃቅ ድማ ንያእቆብ
+        ወለዶ፡ <strong onclick="dP('jamesIsaac')">ያእቆብ&#128104;</strong> ከኣ ንዓሰርተው ክልተ ርእሲ ኣቦታት ወለዶም።<br />
+        9 እቶም <b>ርእሲ ኣቦታት</b> ድማ 
+        <strong onclick="dP('josephJacob')">ንዮሴፍ&#128104;</strong> ቀኒኦምሉ ናብ 
+        <strong onclick="dPlc('egypt')">ግብጺ📍</strong> <b>ሸጥዎ</b>፡ ኣምላኽ ግና <b>ምስኡ ነበረ</b>።
+        <strong onclick="dV(['o.gen.c37.v11', 'o.gen.c37.v28'])">&#128213;</strong><br />
+        10 ካብ ኲሉ ጸበባኡ ኸኣ <b>ኣርሀወሉ</b>፡ ኣብ ቅድሚ ፈርኦን ንጉስ ግብጺ ድማ ዕድልን ጥበብን <b>ሀቦ</b>። ንሱውን ኣብ
+        ግብጽን ኣብ ኲሉ ቤቱን <b>ኣርኣሶ</b>።<br />
+        11 ኣብ ኲሉ ግብጽን ከነኣንን ከኣ ጥሜትን ብዙሕ ጸበባን ኰነ። ኣቦታትና ድማ ዚምገብዎ ሰኣኑ። <br />
+        12 ሽዑ ያእቆብ ኣብ ግብጺ እኽሊ ኸም ዚርከብ ምስ ሰምዔ፡ ነቦታትና ቐዳማይ ጊዜ ለኣኾም። <br />
+        13 ኣብ ካልኣዮም ከኣ ንዮሴፍ ኣሕዋቱ ኣለለይዎ፡ ዓሌቱውን ኣብ ፈርኦን ተፈልጠ።<br />
+        14 ዮሴፍ ከኣ ነቦኡ ያእቆብን ነቶም ሰብዓን ሓሙሽተን ነፍሲ ዚዀኑ ዂሎም ኣዝማዱን ልኢኹ ጸውዖም።<br />
+        15 ያእቆብ ድማ ናብ ግብጺ ወረደ፡ ንሱ ሞተ ኣቦታትናውን ሞቱ።<br />
+        16 ናብ ሰኬም ድማ ኣግዐዝዎም፡ ኣብቲ ኣብርሃም ካብ ደቂ ኤሞር ብወርቂ ዝዐደጎ መቓብር ኣብ 
+        <strong onclick="dPlc('shechem')">ሰኬም📍</strong> ቀበርዎ።
+        <br />
+        17-18 ክሳዕ ንዮሴፍ ዘይፈልጦ ኻልእ ንጉስ ኣብ ግብጺ ዚትንስእ፡ እቲ ኣምላኽ ንኣብርሃም ዝመሐለሉ ዘመን ተስፋ
+        እናቐረበ፡ እቲ ህዝቢ ኣብ ግብጺ ዐመረን በዝሔን <br />
+        19 እዚ ንጉስ እዚ ንዓሌትና ተተናዀሎም፡ ነቦታትና ኸኣ፡ ሕጻናቶም ምእንቲ ኸይዐብዩ፡ ክሳዕ ዚድርብዩ
+        ጨቈኖም።<br />
+        20 በቲ ዘመን እቲ <strong onclick="dP('moses')">ሙሴ&#128104;</strong> ተወልደ፡ ኣብ ቅድሚ ኣምላኽ ከኣ ጽቡቕ ነበረ፡ ሰለስተ ወርሒውን ኣብ ቤት ኣቦኡ ተመገበ።<strong onclick="dV(['n.heb.c11.v23'])">&#128213;</strong>
+        <br />
+        21 ምስ ተደርበየ ግና፡ ጓል ፈርኦን ኣልዐለቶ፡ ወዳ ኪኸውን ከኣ ኣዕበየቶ። <br />
+        22 ሙሴ ድማ ኲሉ ጥበብ ግብጻውያን <b>ተማህረ</b>፡ ብቓሉን ብግብሩን ከኣ <b>በርትዔ</b>። <br />
+        23 ወዲ ኣርብዓ ዓመት ምስ ኰነ ድማ፡ ነሕዋቱ ደቂ እስራኤል ኪበጽሕ ኣብ ልቡ ሓሳብ <b>ኣተዎ</b>።<br />
+        24 ካባታቶም ሓደ ኸም እተዐመጸ ምስ ረኣየ ድማ፡ ሕነ እቲ ዕሙጽ ዘርዩ ነቲ ግብጻዊ <b>ቐተሎ</b>።
+        <strong onclick="dV(['n.heb.c11.v24'])">&#128213;</strong> <br />
+        25 እቶም ኣሕዋቱ ግዳ ኣየስተውዐልዎን እምበር፡ <b class="hy">ኣምላኽ ብኢዱ ገይሩ ምድሓን ከም ዚህቦም</b>፡ ዜስተውዕሉ ይመስሎ
+        ነበረ። <strong onclick="dV(['n.heb.c11.v25','n.heb.c11.v26','n.heb.c11.v27'])">&#128213;</strong><br />
+        26 ንጽብሒቱ ኸኣ ንሓድሕዶም ኪብኣሱ ኸለዉ፡ መጾም። ኬተዐርቖም ደልዩ ኸኣ፡ ኣቱም ሰባት፡ ኣሕዋት ኢኹም፡ ከመይከ
+        ንሓድሕድኩም እትተዓማመጹ፧ በሎም።<br />
+        27-28 እቲ ንብጻዩ ዚዕምጾ ዝነበረ ግና፡ ንኣኻ መን <b>ሓለቓን ፈራድን</b> ገይሩ፡ ኣባና ሸይሙካ፧ ከምቲ ትማሊ ነቲ
+        ግብጻዊ ዝቐተልካዮዶ ኽትቀትለኒ ትደሊ ኣሎኻ፧ ኢሉ ደፍኦ። <br />
+        29 ሙሴ ድማ ብዛዕባ እዚ ዘረባ እዚ ሀደመ፡ ኣብ ምድሪ 
+        <strong onclick="dPlc('midian')">ምድያን📍</strong> ድማ ስደተኛ ዀነ፡ ኣብኡ ኸኣ ክልተ ኣወዳት
+        ወለደ። <br />
+        30 ኣርብዓ ዓመት ምስ መልኤ ድማ፡ ኣብ <strong onclick="dPlc('mountSinai')">በረኻ ደብረ ሲና📍</strong> መልኣኽ ብዚነድድ ኣሻዂ ቈጥቋጥ ተራእዮ። <br />
+        31-32 ሙሴ እዚ ትርኢት እዚ ምስ ረኣየ፡ ተገረመ፡ ኪጥምቶ እንተ ቐረበ ድማ፡ ኣነ ኣምላኽ ኣቦታትካ፡ ኣምላኽ
+        ኣብርሃምን ይስሃቅን ያእቆብን እየ፡ ዚብል ድምጺ እግዚኣብሄር ተሰምዔ። ሽዑ ሙሴ ኣንቀጥቀጠ ኺጥምት ከኣ
+        ኣይደፈረን። <br />
+        33 እግዚኣብሄር ድማ፡ እዛ ደው ኢልካያ ዘሎኻ ቦታ ቅድስቲ ምድሪ እያ እሞ፡ ኣሳንእንካ ኣውጽእ። <br />
+        34 መከራ እቶም ኣብ ግብጺ ዘለዉ ህዝበይ ኣጸቢቐ ርኤኹ እህህታኦም ከኣ ሰማዕኩ ኸውጽኦምውን ወረድኩ፡ ሕጂ ኸኣ
+        ናብ ግብጺ ኽልእከካ፡ ንዓ፡ በሎ።<br />
+        35 ነዚ፡ ሓለቓን ፈራድን ገይሩ መን እዩ ዝሸመካ፧ ኢሎም ዝነቐፍዎ ሙሴ፡ ንእኡ ኣምላኽ፡ ብኢድ እቲ ኣብ ኣሻዂ
+        ቈጥቋጥ እተራእዮ መልኣኽ ገይሩ፡ <b class="hy">ሓለቓን መድሓንን ምእንቲ ኪኸውን ለኣኾ</b>። <br />
+        36 ንሱ ኸኣ ኣብ ግብጽን ኣብ ባሕሪ ኤርትራን ኣብ በረኻን ኣርብዓ ዓመት ትእምርትን ተኣምራትን እናገበረ
+        ኣውጽኦም። <br />
+        37 እቲ ንደቂ እስራኤል፡ ኣምላኽ ካብ <b>ኣሕዋትኩም</b> ከም ዝኸማይ ዝበለ ነብዪ ኼተንስኣልኩም እዩ፡ ንእኡ ስምዕዎ፡
+        ዝበሎም፡ እዚ ሙሴ እዚ እዩ። <br />
+        38 ኣብ ማሕበር ኣብ በረኻ ምስቲ ኣብ ደብረ ሲና እተዛረቦ መልኣኽ ምስ ኣቦታትናን ዝነበረ፡ ምእንቲ ንኣና ኺህቦ
+        ኸኣ ነቲ <b>ህያው ቃል እተቐበለ</b>፡ ንሱ እዩ።<br />
+        39 ንእኡ ኣቦታትና ኣበይዎ እምበር፡ ኪእዘዝዎ ኣይደለዩን፡ <b>ብልቦምውን</b> ናብ ግብጺ ተመልሱ። <br />
+        40 ንኣሮን ድማ፡ እቲ ኻብ ምድሪ ግብጺ ዘውጽኣና ሙሴ እንታይ ከም ዝረኸቦ ኣይንፈልጥን ኢና እሞ፡ ቀቅድሜና ዚኸዱ
+        ኣማልኽቲ ግበረልና፡ በልዎ።<br />
+        41 በቲ ቕነቲ ምራኽ <b>ገበሩ</b>፡ መስዋእቲ ድማ ነቲ ምስሊ ጣኦት <b>ሰውኡ</b>፡ <b>ብግብሪ ኣእዳዎም ከኣ ደስ በሎም</b>። <br />
+        42-43 ኣምላኽ ግና ካባታቶም <b>ኣግለሰ</b>፡ ኣብ መጽሓፍ ነብያት፡ ኣቱም ቤት እስራኤል፡ በተን ኣርብዓ ዓመት ኣብ
+        በረኻኸ ሕሩድን ካልእ መስዋእትንሲ <b>ኣቕሪብኩምለይ ዲኹም</b>፧ ምንም፡ ምእንቲ ኽትሰግዱሎም ኢልኩም ዝገበርኩምዎም
+        ምስልታት፡ ድንኳን ሞሎኽን ኰዀብ ኣምላኽኩም ሬፋንን ኢኹም <b>ዝጾርኩም</b>። ስለዚ ኣነ ኽንየው ባቢሎን ከግዕዘኩም እየ፡
+        ዚብል ጽሑፍ ከም ዘሎ፡ ንሰራዊት ሰማይ ኬምልኹ <b>ፈንዩ ሐደጎም</b>።
+        <strong onclick="dV(['o.lev.c18.v21', 'o.lev.c20.v2','o.lev.c20.v3', 'o.lev.c20.v4','o.amo.c5.v26'])">&#128213;</strong><br />
+        44 እቲ ንሙሴ ዝነገሮ፡ ከምታ ዝረኣያ ምስሊ ገይሩ ኺሰርሓ ዝኣዘዞ ድንኳን ምስክር ኣብ በረኻ ምስ ኣቦታትና
+        ነበረት።<br />
+        45 ኣቦታትና ድማ ተቐቢሎምዋ፡ <strong onclick="dP('joshua')">ብእያሱ&#128104;</strong> ተመሪሖም ኪወርሱ ኸለዉ፡ ናብታ ኣምላኽ ክሳዕ ዘመን ዳዊት ካብ ገጽ ኣቦታትና ዝሰጐጎም ኣህዛብ ዝነበርዋ ሃገር ኣእተውዋ።<br />
+        46 <strong onclick="dP('david')">ዳዊት&#128104;</strong> ድማ ኣብ ቅድሚ ኣምላኽ ዕድል ረኸበ፡ ንኣምላኽ ያእቆብ ዚኸውን ማሕደር ኪረክብ ከኣ ለመነ።<br />
+        47 ቤት ዝሀነጸሉ ግና <strong onclick="dP('solomon')">ሰሎሞን&#128104;</strong> እዩ። <br />
+        48-50 ነብዪ ኸም ዚብል፡ ሰማይ ዝፋነይ፡ ምድሪ ኸኣ መርገጽ እግረይ እዩ። ከመይ ዝበለት ቤት እያ እትሀንጹለይ፧
+        ወይስ ኣየነይቲ ስፍራ እያ ዝዐርፈላ፧ እዚ ዂሉስ ኢደይዶ ኣይገበረቶን፧ ይብል እግዚኣብሄር፡ እቲ ልዑል ብኢድ ሰብ
+        ኣብ እተሀንጸት ቤት <b>ኣይነብርን</b> እዩ። <br />
+        51 ኣቱም ልብኹምን <b>ኣእዛንኩምን ዘይተገዝረ</b> ተረርቲ ኽሳድ፡ ንስኻትኩም ኲሉ ጊዜ ንመንፈስ ቅዱስ ትጻረርዎ ኣሎኹም።
+        ከምቲ ኣቦታትኩም ዝገበርዎ፡ ንስኻትኩም ድማ ከምኡ ትገብሩ ኣሎኹም።
+        <strong onclick="dV(['n.rom.c2.v29', 'o.deu.c10.16', 'o.jer.c4.v4', 'o.eza.c44.v9', 'o.jer.c9.v25', 'n.col.c2.v11', 'o.exo.c32.v9', 'o.exo.c33.v3', 'o.psa.c75.v4', 'o.psa.c75.v5','o.isa.c48.v4'])">&#128213;</strong><br />
+        52 ካብ ነብያትከ ኣቦታትኩም ዘይሰጐጒዎ መን እዩ፧ ነቶም ብዛዕባ ምምጻእ <b>እቲ ጻድቕ</b> ኣቐዲሞም ዘበሰሩ ድማ ቐተልዎም። ሕጂ ውን ንስኻትኩም ኣሕሊፍኩም ወሃብቱን ቀተልቱን ኰንኩም።
+        <strong onclick="dV(['o.isa.c53.v11'])">&#128213;</strong><br />
+        53 ንስኻትኩም ነቲ ሕጊ ብኢድ መላእኽቲ ተቐቢልኩምዎስ <b>ኣይሐሎኹምዎን</b>።<br /></p>
+        <p>
+          <h2 class="sub-chapter">እስጢፋኖስ ብዳርባ እምኒ ከም ዝሞተ</h2>
+        54 እዚ ምስ ሰምዑ፡ ልቦም ነደደ፡ ኣስናኖም ከኣ ሐርቀሙሉ።<br />
+        55 ንሱ ግና መንፈስ ቅዱስ መልኦ፡ ናብ ሰማይ ኣንቃዕሪሩ ኸኣ ክብሪ ኣምላኽን የሱስ ድማ ኣብ የማን ኣምላኽ <b>ደው</b>
+        ኢሉን ረኣየ እሞ፡
+        <strong onclick="dV(['n.luk.c22.v69', 'o.psa.c110.v1','n.heb.c8.v1'])">&#128213;</strong><br />
+        56 እንሆ፡ ሰማይ ተኸፊቱ፡ ወዲ ሰብ ድማ ኣብ የማን ኣምላኽ ደው ኢሉ እርኢ ኣሎኹ፡ በለ። <br />
+        57 ሽዑ ዓው ኢሎም ጨደሩ ኣእዛኖም ደፊኖም ድማ፡ ሐቢሮም ብሓንሳእ ወረርዎ። <br />
+        58 ናብ ወጻኢ እታ ኸተማ ወሲዶም ከኣ ብዳርባ እምኒ ቐተልዎ። እቶም ምስክር ድማ ክዳውንቶም ኣብ ጥቓ ኣእጋር
+        <strong onclick="dP('saulPaul')">ሳውል&#128104;</strong> ዚብሀል ጐበዝ ኣንበሩ።<br />
+        59 ንእስጢፋኖስ ከኣ እናተማህለለን፡ ጐይታይ የሱስ፡ መንፈሰይ ተቐበል፡ እናበለን፡ ብዳርባ እምኒ ቐተልዎ።<br />
+        60 ተምበርኪኹ ኸኣ ብዓብዪ ድምጺ፡ ጐይታይ፡ እዚ ሓጢኣት እዚ <b>ኣይትሐዘሎም</b>፡ ኢሉ ጨደረ። እዚ ምስ በለውን
+        ዐረፈ።<br />
+      </p>
+      <div class="topnav">
+        <span class="next"><a href="./acts6.html"> ምዕራፍ 6</a></span>
+        <span class="chapter">ምዕራፍ 7</span>
+        <span class="next"><a href="acts8.html"> ምዕራፍ 8</a></span>
+      </div>
+      <div>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSduaQQSwAUTD5Y6EuvoVArlR06qRO55GJonebrXt1udPpsfrw/viewform?usp=sharing&ouid=111947718828909702830"
+          >ንምእራምን ንምምዕርራይን ኣብዚኣ ጠውቑ</a
+        >
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
