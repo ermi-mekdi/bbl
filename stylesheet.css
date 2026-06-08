@@ -184,12 +184,12 @@ u {
   font-weight: bold;
 }
 .hy {
-  background-color: rgba(255, 255, 0, 0.438);
-  font-weight: bolder;
+  color: rgb(57, 48, 107);
+  font-size:larger;  
 }
-.hyr {
-  background-color: rgba(245, 136, 117, 0.404);
-  font-weight: bolder;
+.hyg {
+  color: rgba(37, 94, 35, 0.986);
+  font-size:larger; 
 }
 .list {
   display: flex;
