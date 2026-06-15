@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ti">
+  <head>
+    <title>INPUT</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/faviacts.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Allow clipboard API -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'self';"
+    />
+  </head>
+
+  <body>
+    <form id="dataForm">
+      <h1>Add New Person</h1>
+      <div class="gender">
+        <label for="man">Male</label>
+          <input type="radio" id="man" name="gender" value="true" checked />
+        <label for="woman">Female</label>
+          <input type="radio" id="woman" name="gender" value="false"/>
+      </div>
+      <input type="text" id="id" placeholder="ID" required /><br />
+      <input type="text" id="name1" placeholder="Name (ትግርኛ)" /><br />
+      <input type="text" id="nameE1" placeholder="English Name" /><br />
+      <input type="text" id="nameM1" placeholder="Meaning (ትግርኛ)" /><br />
+      <input type="text" id="name2" placeholder="Second Name(ትግርኛ)" /><br />
+      <input type="text" id="nameE2" placeholder="English Name" /><br />
+      <input type="text" id="nameM2" placeholder="Meaning (ትግርኛ)" /><br />
+
+      <input
+        type="text"
+        id="ver"
+        placeholder="Vers (e.g. mat1:22, joh1.1)"
+      /><br />
+      <input
+        type="text"
+        id="title"
+        placeholder="Titles (e.g. Apostel, Evangelist)"
+      /><br />
+      <input type="text" id="address" placeholder="Addresses" /><br />
+
+      <textarea type="text" id="info" placeholder="Info"></textarea><br />
+
+      <button type="submit">Generate JSON</button>
+    </form>
+  
+
+    <script src="./input.js" defer>   
+
+    </script>
+  </body>
+</html>

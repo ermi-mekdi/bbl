@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ti">
+  <head>
+    <title>ቦታ ኣብ መጽሓፍ ቅዱስ</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/faviacts.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    
+  </head>
+  <body>
+    <div class="bo">
+      <div class="list">
+        <div class="ppl">
+          <h2>ኣስማት ቦታ</h2>
+          <form>
+            <input id="searchInput" type="text" placeholder="Search names..."> <button id="searchButton" type="button">search</button>
+          </form>
+          <div class="js-pplList">   </div>
+        </div>
+        <div class="detaile">
+          <h2>ሓበሬታ ቦታ</h2>
+          <div class="js-pplDetail"></div>
+
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    <script>
+      const pplListEl = document.querySelector('.js-pplList');
+      const detailEl = document.querySelector('.js-pplDetail');
+      function disPlc(p){
+        
+        const title = p.title
+          ? p.title.map((item) => `<li>${item}</li>`).join(""): "";
+        const info = p.info ? p.info.map((item) => `<li>${item}</li>`).join("") : "";
+        const vers = p.ver ? p.ver.map((item) => `<li>${item}</li>`).join("") : "";
+        const gMap = p.gMap ? `<a href="${p.gMap}" target="_blank">Map</a>` : "";
+        detailEl.innerHTML = `
+        <h4> ${p.name1} (${p.nameE1})</h4>
+        <h4> ${p.nameM1} </h4>
+        <h4> ${p.name2} ${p.nameE2}</h4>
+        <h4> ${p.nameM2} </h4>
+        <h4> ID :  ${p.id} </h4>
+        <h4>${gMap}</h4>         
+        <ul>${vers}</ul>
+        <ul>${info}</ul>
+        `
+      }
+      
+     
+      fetch('../data/plc.json')
+        .then(r => r.json())// load json
+        
+        .then(data => {
+          //console.log(data);
+          // normalize top-level shape: object -> array, or already array
+          const pplArray = Array.isArray(data) ? data : Object.values(data);
+          pplListEl.innerHTML = '';
+
+          pplArray.forEach(item => {
+            // item might itself be an array [person, ...], or an object { person: {...} }, or the person directly
+            let person = Array.isArray(item) ? item[0] : item;
+            if (person && person.person) person = person.person;
+
+            if (!person) return; // skip bad entries
+
+            const li = document.createElement('li');
+            li.style.cursor = 'pointer';
+            li.textContent = person.name1 || person.nameE1 || person.name || person.id || 'Unknown';
+
+            li.addEventListener('click', () => {
+              if (typeof disPlc === 'function') disPlc(person);
+              else console.warn('display function disPlc not found', person);
+            });
+
+            pplListEl.appendChild(li);
+          });
+
+          //console.log('rendered', pplListEl.children.length);
+        });
+
+
+        // Add search functionality
+          const searchInput = document.getElementById('searchInput');
+          const searchButton = document.getElementById('searchButton');
+
+          searchButton.addEventListener('click', () => {
+            const query = searchInput.value.toLowerCase().trim();
+            if (query === '') {
+              renderList(pplArray);
+            } else {
+              const filtered = pplArray.filter(person => {
+                if (!person) return false;
+                const name1 = (person.name1 || '').toLowerCase();
+                const name2 = (person.name2 || '').toLowerCase();
+                const nameE1 = (person.nameE1 || '').toLowerCase();
+                const name = (person.name || '').toLowerCase();
+                return name1.includes(query) || name2.includes(query) || nameE1.includes(query) || name.includes(query);
+              });
+              renderList(filtered);
+            }
+            // Clear details when searching
+            detailEl.innerHTML = '';
+          });
+
+          //console.log('rendered', pplListEl.children.length);
+  
+        
+    </script>
+    
+
+  </body>
+</html>
