@@ -524,7 +524,7 @@
     "nameE2": "",
     "nameM2": "",
     "vers": [""],
-    "gMap": "../assets/kushLibyaIran.jpg",
+    "gMap": "../assets/KushLibyaIran.jpg",
     "info": ["ናይ ሽዕኡ ኢትዮጵያ ማለት ካብ ግብጺ ንደቡብ ዘሎ እዩ።",
       "ንግስነት ኢዮትጵያ ተባሂሉ ዘሎ ንንግስነት ኩሽ የመልክት።",
       "ዋና ከተማ ድማ ሜሩ(Meroe) ትበሃል ኣብ ናይ ሕጂ ሱዳን ትርከብ።",
@@ -547,6 +547,23 @@
   "info": [
     "ኣሽዶድ ብእብራይስጥ",
     "ኣዛጦን (ብግሪኽ)"
+  ]
+  },
+    "wadielhesi": {
+  "id": "wadielhesi",
+  "name1": "ዋዲ ኤል ሀሲ",
+  "nameE1": "Wadi el-Hesi",
+  "nameM1": "",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/JerusalemGaza.jpg",
+  "info": [
+    "መብዝሕትኦም ተመራመርቲ ዝሰማምዕሉ ኢትዮጵያዊ ዝተጠመቐሉ ቦታ",
+    ""
   ]
   }
 }
