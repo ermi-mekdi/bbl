@@ -565,5 +565,22 @@
     "መብዝሕትኦም ተመራመርቲ ዝሰማምዕሉ ኢትዮጵያዊ ዝተጠመቐሉ ቦታ",
     ""
   ]
+  },
+    "damascus": {
+  "id": "damascus",
+  "name1": "ደማስቆ",
+  "nameE1": "Damascus",
+  "nameM1": "",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/acts1.jpg",
+  "info": [
+    "",
+    ""
+  ]
   }
 }

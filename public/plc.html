@@ -30,84 +30,77 @@
     <script>
       const pplListEl = document.querySelector('.js-pplList');
       const detailEl = document.querySelector('.js-pplDetail');
-      function disPlc(p){
-        
-        const title = p.title
-          ? p.title.map((item) => `<li>${item}</li>`).join(""): "";
-        const info = p.info ? p.info.map((item) => `<li>${item}</li>`).join("") : "";
-        const vers = p.ver ? p.ver.map((item) => `<li>${item}</li>`).join("") : "";
-        const gMap = p.gMap ? `<a href="${p.gMap}" target="_blank">Map</a>` : "";
+      let pplArray = []; // Declare outside for access in search
+
+      function disPlc(p) {
+        const title = p.title ? p.title.map((item) => `<li>${item}</li>`).join('') : '';
+        const info = p.info ? p.info.map((item) => `<li>${item}</li>`).join('') : '';
+        const vers = p.ver ? p.ver.map((item) => `<li>${item}</li>`).join('') : '';
+        const gMap = p.gMap ? `<a href="${p.gMap}" target="_blank">Map</a>` : '';
         detailEl.innerHTML = `
-        <h4> ${p.name1} (${p.nameE1})</h4>
-        <h4> ${p.nameM1} </h4>
-        <h4> ${p.name2} ${p.nameE2}</h4>
-        <h4> ${p.nameM2} </h4>
-        <h4> ID :  ${p.id} </h4>
-        <h4>${gMap}</h4>         
+        <h4> ${p.name1 || ''} (${p.nameE1 || ''})</h4>
+        <h4> ${p.nameM1 || ''} </h4>
+        <h4> ${p.name2 || ''} ${p.nameE2 || ''}</h4>
+        <h4> ${p.nameM2 || ''} </h4>
+        <h4> ID :  ${p.id || ''} </h4>
+        <h4>${gMap}</h4>
         <ul>${vers}</ul>
         <ul>${info}</ul>
-        `
+        `;
       }
-      
-     
-      fetch('../data/plc.json')
-        .then(r => r.json())// load json
-        
-        .then(data => {
-          //console.log(data);
-          // normalize top-level shape: object -> array, or already array
-          const pplArray = Array.isArray(data) ? data : Object.values(data);
-          pplListEl.innerHTML = '';
 
-          pplArray.forEach(item => {
-            // item might itself be an array [person, ...], or an object { person: {...} }, or the person directly
-            let person = Array.isArray(item) ? item[0] : item;
-            if (person && person.person) person = person.person;
-
-            if (!person) return; // skip bad entries
-
-            const li = document.createElement('li');
-            li.style.cursor = 'pointer';
-            li.textContent = person.name1 || person.nameE1 || person.name || person.id || 'Unknown';
-
-            li.addEventListener('click', () => {
-              if (typeof disPlc === 'function') disPlc(person);
-              else console.warn('display function disPlc not found', person);
-            });
-
-            pplListEl.appendChild(li);
+      function renderList(list) {
+        pplListEl.innerHTML = '';
+        list.forEach(person => {
+          if (!person) return;
+          const li = document.createElement('li');
+          li.style.cursor = 'pointer';
+          li.textContent = person.name1 || person.nameE1 || person.name || person.id || 'Unknown';
+          li.addEventListener('click', () => {
+            disPlc(person);
           });
+          pplListEl.appendChild(li);
+        });
+      }
 
-          //console.log('rendered', pplListEl.children.length);
+      fetch('../data/plc.json')
+        .then(r => r.json())
+        .then(data => {
+          pplArray = Array.isArray(data) ? data : Object.values(data);
+          renderList(pplArray);
+        })
+        .catch(err => {
+          console.error('Unable to load plc data', err);
         });
 
+      const searchInput = document.getElementById('searchInput');
+      const searchButton = document.getElementById('searchButton');
 
-        // Add search functionality
-          const searchInput = document.getElementById('searchInput');
-          const searchButton = document.getElementById('searchButton');
-
-          searchButton.addEventListener('click', () => {
-            const query = searchInput.value.toLowerCase().trim();
-            if (query === '') {
-              renderList(pplArray);
-            } else {
-              const filtered = pplArray.filter(person => {
-                if (!person) return false;
-                const name1 = (person.name1 || '').toLowerCase();
-                const name2 = (person.name2 || '').toLowerCase();
-                const nameE1 = (person.nameE1 || '').toLowerCase();
-                const name = (person.name || '').toLowerCase();
-                return name1.includes(query) || name2.includes(query) || nameE1.includes(query) || name.includes(query);
-              });
-              renderList(filtered);
-            }
-            // Clear details when searching
-            detailEl.innerHTML = '';
+      function performSearch() {
+        const query = searchInput.value.toLowerCase().trim();
+        if (query === '') {
+          renderList(pplArray);
+        } else {
+          const filtered = pplArray.filter(person => {
+            if (!person) return false;
+            const name1 = (person.name1 || '').toLowerCase();
+            const name2 = (person.name2 || '').toLowerCase();
+            const nameE1 = (person.nameE1 || '').toLowerCase();
+            const name = (person.name || '').toLowerCase();
+            return name1.includes(query) || name2.includes(query) || nameE1.includes(query) || name.includes(query);
           });
+          renderList(filtered);
+        }
+        detailEl.innerHTML = '';
+      }
 
-          //console.log('rendered', pplListEl.children.length);
-  
-        
+      searchButton.addEventListener('click', performSearch);
+      searchInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          performSearch();
+        }
+      });
     </script>
     
 
