@@ -5,8 +5,8 @@ body {
   background-color: #dacca5;
 }
 .dark-mode {
-  background-color: #242222;
-  color: #e4dbdb;
+  background-color: #242222e2;
+  color: #ded48b;
 }
 #dark-mode {
   cursor: pointer;

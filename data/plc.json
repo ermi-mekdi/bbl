@@ -570,7 +570,7 @@
   "id": "damascus",
   "name1": "ደማስቆ",
   "nameE1": "Damascus",
-  "nameM1": "",
+  "nameM1": "ማይ ዘለዋ ወይ ፍርያም መሬት",
   "name2": "",
   "nameE2": "",
   "nameM2": "",
@@ -581,6 +581,25 @@
   "info": [
     "",
     ""
+  ]
+  },
+    "caesarea": {
+  "id": "caesarea",
+  "name1": "ቂሳርያ",
+  "nameE1": " Caesarea",
+  "nameM1": "ከተማ ቄሳር",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/actsIsrael.jpg",
+  "info": [
+    "ሎሚ ኣብ ሞንጎ ቴል ኣቪቭን ሓይፋን ትርከብ",
+    "ብሄሮድስ ዓቢ  Herod the Great ተሃኒጻ ንኽብሪ ቄሳር ኣጉስጦስ",
+    "ኣብቲ ግዜ ናይ ይሁዳ ዋና ከተማ እያ ነይራ",
+    "ዓባይ ወደባዊት ከተማ እያ ነይራ"
   ]
   }
 }
