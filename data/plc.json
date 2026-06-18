@@ -530,7 +530,7 @@
       "ዋና ከተማ ድማ ሜሩ(Meroe) ትበሃል ኣብ ናይ ሕጂ ሱዳን ትርከብ።",
       "እታ ከተማ ካብ ኣስታት 800 ዓዓ ክሳብ 350ዓም ሰባት ይነብሩላ ነይሮም።",
       "ድሕሪ እዚ ምናልባት ኣብ ትሕቲ ንግስነት ኣክሱም ኣትያ ትኸውን ፡ ",
-    "ነዝያዳ ሓበሬታ<a href='https://en-wikipedia-org.translate.goog/wiki/Mero%C3%AB?_x_tr_sl=en&_x_tr_tl=nl&_x_tr_hl=nl&_x_tr_pto=sge`  target=`_blank'>ኣብዚ ጠውቑ</a>"]
+    "ነዝያዳ ሓበሬታ<a href='https://en-wikipedia-org.translate.goog/wiki/Mero%C3%AB?_x_tr_sl=en&_x_tr_tl=nl&_x_tr_hl=nl&_x_tr_pto=sge'  target=`_blank`>ኣብዚ ጠውቑ</a>"]
   },
   "azotus": {
   "id": "azotus",
@@ -600,6 +600,42 @@
     "ብሄሮድስ ዓቢ  Herod the Great ተሃኒጻ ንኽብሪ ቄሳር ኣጉስጦስ",
     "ኣብቲ ግዜ ናይ ይሁዳ ዋና ከተማ እያ ነይራ",
     "ዓባይ ወደባዊት ከተማ እያ ነይራ"
+  ]
+  },
+   "straightDamascus": {
+  "id": "straightDamascus",
+  "name1": "ቕኑዕ ዚብሀል መተሓላለፊ",
+  "nameE1": "Straight",
+  "nameM1": "ትኽዝበለ ጎደና (Via Recta)",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/actsIsrael.jpg",
+  "info": [
+    "ክሳብ ሕጂ ኣብ ናይ ቀደም ከተማ ኣሎ",
+    "ካብ ምብራቕ ናብ ምዕራብ ትኽዝበለ ጎደና እዩ",
+    "ኣብቲ ግዜ ናይ ይሁዳ ዋና ከተማ እያ ነይራ",
+    "ነዝያዳ ሓበሬታ <a href= 'https://nl.wikipedia.org/wiki/Rechte_Straat_(Damascus)'target=`_blank`>ኣብዚ ጠውቑ</a>"
+  ]
+  },
+  "tarsusCilicia": {
+  "id": "tarsusCilicia",
+  "name1": "ጠርሴስ",
+  "nameE1": "Tarsus",
+  "nameM1": "ጸፊሕ (ለጥ ዝበለ) መሬት",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/paul2&3.jpg",
+  "info": [
+    "ኣብ ግዝኣት ቂልቅያ ትርከብ ከተማ",
+    "ዓዲ ጳውሎስ"
   ]
   }
 }
