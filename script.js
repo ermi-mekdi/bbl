@@ -192,12 +192,13 @@ function vers(t) {
   display.classList.add("person");
   display.id = "pdisplay";
   document.body.appendChild(display);
+  // class="vdetails"
   const tq = t
     ? t
         .map(
           (item) =>
             `<li ><h3>${item.n}</h3>
-      <h4 class="vdetails">${item.d}</h4>
+      <h4 >${item.d}</h4>
      </li>`,
         )
         .join("")
@@ -206,6 +207,46 @@ function vers(t) {
   display.innerHTML = `
     <div onclick="de()" class="x">X</div> 
     ${tq}
+    <button class="xbtn" onclick="de()">Close</button>
+    `;
+}
+
+
+function dZ(h, s) {
+  if (!Array.isArray(h) || !Array.isArray(s)) {
+    console.warn("dZ: h and s should be arrays, got:", h, s);
+    return;
+  }
+
+  // Map each path in b to its verse object, filter out any nulls
+  const head = h.map((path) => getVerseByPath(path)).filter((hd) => hd);
+  const story = s.map((path) => getVerseByPath(path)).filter((st) => st);
+
+  if (head.length === 0) {
+    console.warn("No verses found for paths:", h);
+    return;
+  }
+    if (story.length === 0) {
+    console.warn("No verses found for paths:", s);
+    return;
+  }
+
+  // Pass the array of verse objects to vers() for display
+  zanta(head, story);
+  //console.log("Paths:", b);
+  //console.log("Verses:", verses);
+}
+function zanta(h, s){
+  const display = document.createElement("div");
+  display.classList.add("person");
+  display.id = "pdisplay";
+  document.body.appendChild(display);
+  const z = h ? h.map((item) => `${item}`).join("") : "";
+  const s1 = s ? s.map((item) => `<li><span class="nn">${item.nn}</span> ${item.d}</li>`).join("") : "";
+  display.innerHTML = `
+    <div onclick="de()" class="x">X</div> 
+    <h3> ${z} </h3>
+    <h4 class="vdetails"> ${s1} </h4>
     <button class="xbtn" onclick="de()">Close</button>
     `;
 }

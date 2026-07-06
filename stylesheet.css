@@ -5,7 +5,7 @@ body {
   background-color: #dacca5;
 }
 .dark-mode {
-  background-color: #242222e2;
+  background-color: #080808fb;
   color: #ded48b;
 }
 #dark-mode {
@@ -136,6 +136,10 @@ a {
 .pdetails {
   text-align: left;
   margin-left: 2px;
+}
+.nn{
+  font-size: 12px;
+  margin-right: 8px;
 }
 .vdetails {
   text-align: left;
