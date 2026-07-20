@@ -167,6 +167,50 @@ function getVerseByPath(path) {
   }
   return obj;
 }
+
+
+function dVc(b) {
+  if (!Array.isArray(b)) {
+    console.warn("dVc: b should be an array of paths, got:", b);
+    return;
+  }
+   // Map each path in b to its verse object, filter out any nulls
+  const tiq = b.map((path) => buildBookPath(path)).filter((verse) => verse);
+
+  if (verses.length === 0) {
+    console.warn("No verses found for paths:", b);
+    return;
+  }
+
+  // Pass the array of verse objects to vers() for display
+  num(verses);
+console.log("dVc called with paths:", b);
+  dV(b);
+}
+function num(t) {
+  const display = document.createElement("div");
+  display.classList.add("person");
+  display.id = "pdisplay";
+  document.body.appendChild(display);
+  // class="vdetails"
+  const tq = t
+    ? t
+        .map(
+          (item) =>
+            `<li ><h3>${item.n}</h3>
+      <h4 class="vdetails">${item.d}</h4>
+     </li>`,
+        )
+        .join("")
+    : "";
+
+  display.innerHTML = `
+    <div onclick="de()" class="x">X</div> 
+    ${tq}
+    <button class="xbtn" onclick="de()">Close</button>
+    `;
+}
+
 function dV(b) {
   if (!Array.isArray(b)) {
     console.warn("dV: b should be an array of paths, got:", b);
@@ -198,7 +242,7 @@ function vers(t) {
         .map(
           (item) =>
             `<li ><h3>${item.n}</h3>
-      <h4 >${item.d}</h4>
+      <h4 class="vdetails">${item.d}</h4>
      </li>`,
         )
         .join("")
