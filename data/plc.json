@@ -636,5 +636,59 @@
     "ኣብ ግዝኣት ቂልቅያ ትርከብ ከተማ",
     "ዓዲ ጳውሎስ"
   ]
+  },
+  "lyddaJudea": {
+  "id": "lyddaJudea",
+  "name1": "ልዳ",
+  "nameE1": "Lydda",
+  "nameM1": "ብእብራይስጥ ግጭት፡ ብግሪኽ ዝተረኽበ ወይ ፍቑር",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/actsIsrael.jpg",
+  "info": [
+    "ኣብ ይሁዳ ትርከብ ከተማ",
+    "ኣብ ጥቓ  Ben Gurion Airport ትርከብ",
+    "ናይ ሎሚ ሽማ ሎድ (Lod)"
+  ]
+  },
+  "joppaJudea": {
+  "id": "joppaJudea",
+  "name1": "ዮጴ",
+  "nameE1": "Joppa",
+  "nameM1": "ጽቡቕ፡ ዘንጸባርቕ፡ ርትዒ",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/actsIsrael.jpg",
+  "info": [
+    "ናይ ቀደም ወደባዊት ከተማ",
+    "ኣብ ደቡባዊ ክፋል Tel Aviv Yafo ትርከብ",
+    "ናይ ሎሚ ሽማ ጃፋ (Jaffa)",
+    "ካብ ልዳ ናብ ዮጴ ኣስታት 24 ኪሎ ሜትር እዩ"
+  ]
+  },
+  "sharonJudea": {
+  "id": "sharonJudea",
+  "name1": "ሳሮን",
+  "nameE1": "Sharon",
+  "nameM1": "ሰጣሕ ጎልጎል",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/actsIsrael.jpg",
+  "info": [
+    "ናብ ማእከላይ ባሕሪ ዘብል ለምለም መሬት",
+    "ኣብ ሞንጎ ዮጴን ቂሳርያን ይርከብ"
+  ]
   }
 }
