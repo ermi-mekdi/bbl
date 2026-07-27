@@ -221,3 +221,8 @@ u {
   border-radius: 8px;
   background-color: #b3a88a;
 }
+.number {
+  display: block;
+  font-size: 0.75rem;
+  margin: 0.15rem 0 0.15rem;
+}
