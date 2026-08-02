@@ -21,7 +21,7 @@ body {
   font-size: 18px;
   text-align: justify;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 0px;
   font-family: "Noto Sans Ethiopic", sans-serif;
 }
 .selectChapter-wrapper {
@@ -223,6 +223,8 @@ u {
 }
 .number {
   display: block;
-  font-size: 0.75rem;
-  margin: 0.15rem 0 0.15rem;
+  font-size: 0.85rem;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-left: 6px;
 }

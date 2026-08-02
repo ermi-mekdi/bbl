@@ -286,7 +286,7 @@ function zanta(h, s){
   display.id = "pdisplay";
   document.body.appendChild(display);
   const z = h ? h.map((item) => `${item}`).join("") : "";
-  const s1 = s ? s.map((item) => `<li><span class="nn">${item.nn}</span> ${item.d}</li>`).join("") : "";
+  const s1 = s ? s.map((item) => `<li><span class="number">${item.nn}</span> ${item.d}</li>`).join("") : "";
   display.innerHTML = `
     <div onclick="de()" class="x">X</div> 
     <h3> ${z} </h3>
