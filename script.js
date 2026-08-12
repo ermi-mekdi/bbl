@@ -63,7 +63,7 @@ function dP(p) {
   display.id = "pdisplay";
   document.body.appendChild(display);
   //console.log(p);
-  const sex = m.man === true ? "&#128104; " : "&#128105; ";
+  
   const def1 = m.nameM1 ? m.name1 + " ማለት " + m.nameM1 : "";
   const def2 = m.nameM2 ? m.name2 + " ማለት " + m.nameM2 : "";
   const naam2 =
@@ -81,7 +81,7 @@ function dP(p) {
 
   display.innerHTML = `
   <div onclick="de()" class="x">X</div>
-  <h3>${sex}</h3>
+  
   <h2> ስም ${m.name1} (${m.nameE1}) </h2>
   <h4>${def1}</h4>
   <h3> ${naam2} </h3>  
@@ -310,6 +310,8 @@ function dayNight() {
         const menu = document.getElementById('chapterMenu');
         menu.classList.toggle('show');
       }
+
+//selectChapter-wrapper
       document.addEventListener('click', function(event) {
   const wrapper = document.querySelector('.selectChapter-wrapper');
   // Check if wrapper exists before calling .contains()
