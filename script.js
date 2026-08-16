@@ -19,7 +19,7 @@ window.ver = null;
     const res = await fetch("../data/ver.json");
     if (!res.ok) throw new Error(res.status);
     window.ver = await res.json();
-    //console.log("vers loaded", window.ver);
+    console.log("vers loaded", window.ver);
   } catch (err) {
     console.error("Failed to load vers.json", err);
     window.ver = {};
@@ -255,12 +255,64 @@ function vers(t) {
     `;
 }
 
+function dH(m, q) {
+  if (!Array.isArray(q)) {
+    console.warn("dH: q should be an array of paths, got:", q);
+    return;
+  }
+
+  const render = () => {
+    const target = m ? document.getElementById(m) : null;
+    if (!target) {
+      console.warn("dH: target element not found:", m);
+      return;
+    }
+
+    const tx = q
+      .map((path) => getVerseByPath(path))
+      .filter((verse) => verse);
+
+    if (tx.length === 0) {
+      console.warn("No verses found for paths:", q);
+      return;
+    }
+
+    txHtml(target, tx);
+  };
+
+  if (!window.ver) {
+    setTimeout(() => dH(m, q), 150);
+    return;
+  }
+
+  render();
+}
+
+function txHtml(target, tx) {
+  if (!target || !(target instanceof HTMLElement)) {
+    console.warn("txHtml: target element is invalid", target);
+    return;
+  }
+
+  const s1 = tx
+    ? tx
+        .map(
+          (item) =>
+            `<div class="verse-row"><span class="number">${item.nn ?? ""}</span> ${item.d ?? ""}</div>`,
+        )
+        .join("")
+    : "";
+
+  target.innerHTML = `
+    <div class="vdetails">${s1}</div>
+  `;
+}
 
 function dZ(h, s) {
   if (!Array.isArray(h) || !Array.isArray(s)) {
     console.warn("dZ: h and s should be arrays, got:", h, s);
     return;
-  }
+  } 
 
   // Map each path in b to its verse object, filter out any nulls
   const head = h.map((path) => getVerseByPath(path)).filter((hd) => hd);
