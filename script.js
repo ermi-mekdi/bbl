@@ -19,7 +19,7 @@ window.ver = null;
     const res = await fetch("../data/ver.json");
     if (!res.ok) throw new Error(res.status);
     window.ver = await res.json();
-    console.log("vers loaded", window.ver);
+    //console.log("vers loaded", window.ver);
   } catch (err) {
     console.error("Failed to load vers.json", err);
     window.ver = {};
@@ -192,7 +192,7 @@ function num(t) {
   display.classList.add("person");
   display.id = "pdisplay";
   document.body.appendChild(display);
-  // class="vdetails"
+  
   const tq = t
     ? t
         .map(
@@ -338,7 +338,7 @@ function zanta(h, s){
   display.id = "pdisplay";
   document.body.appendChild(display);
   const z = h ? h.map((item) => `${item}`).join("") : "";
-  const s1 = s ? s.map((item) => `<li><span class="number">${item.nn}</span> ${item.d}</li>`).join("") : "";
+  const s1 = s ? s.map((item) => `<div><span class="number">${item.nn}</span> ${item.d}</div>`).join("") : "";
   display.innerHTML = `
     <div onclick="de()" class="x">X</div> 
     <h3> ${z} </h3>

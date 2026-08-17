@@ -5,8 +5,8 @@ body {
   background-color: #dacca5;
 }
 .dark-mode {
-  background-color: #080808fb;
-  color: #ded48b;
+  background-color: #181818fc;
+  color: #d5c85f;
 }
 #dark-mode {
   cursor: pointer;
@@ -17,7 +17,7 @@ body {
   z-index: 3;
 }
 .bo {
-  line-height: 1.6;
+  line-height: 1.4;
   font-size: 18px;
   text-align: justify;
   margin-bottom: 10px;
@@ -143,8 +143,10 @@ a {
 }
 .vdetails {
   text-align: left;
-  margin-left: 15px;
+  margin-left: 3px;
   font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 strong {
   cursor: pointer;
@@ -215,15 +217,18 @@ u {
   max-height: 85vh;
   overflow-y: auto;
 }
-.detaile {
+.vdetaile {
   width: 60%;
   border: none;
   border-radius: 8px;
   background-color: #b3a88a;
+  margin-top: 0px;
+  margin-bottom:10px;
+  padding:0px;
 }
 .number {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   margin-bottom: 0px;
   margin-top: 5px;
   margin-left: 6px;
