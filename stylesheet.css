@@ -129,6 +129,26 @@ a {
   border-radius: 10px;
   padding-bottom: 5px;
 }
+.plc {
+  text-align: center;
+  font-size: 20px;
+  width: 90%;
+  max-width: 700px;
+  height: 75%;
+  background-color: rgba(116, 208, 116, 0.894);
+  z-index: 2;
+  position: fixed;
+  top: 20%;
+  left: 6%;
+  right: 10%;
+  bottom: 5%; /* allow the box to fill available height */
+  overflow: auto; /* enable scrolling when content is taller */
+  -webkit-overflow-scrolling: touch; /* for smooth scrolling on mobile */
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
 .sex {
   display: flex;
   justify-content: center;

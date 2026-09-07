@@ -3,7 +3,7 @@
     "id": "jerusalem",
     "name1": "የሩሳሌም",
     "nameE1": "Jerusalem",
-    "nameM1": " የሩሳሌም",
+    "nameM1": "መሰረት/ከተማ ሰላም",
     "name2": "",
     "nameE2": "",
     "nameM2": "",
@@ -59,13 +59,13 @@
   "upRoom": {
     "name1": " ናብታ ደርቢ",
     "nameE1": "upper room",
-    "nameM1": "ናብታ ድራር ፋሲካ ዝበልዑላ ደርቢዶ ትመስል?",
+    "nameM1": "",
     "name2": "",
     "nameE2": "",
     "nameM2": "",
-    "vers": ["bib.n.luk.c23.v12"],
+    "vers": ["n.luk.c22.v12"],
     "gMap": "",
-    "info": ["ሉቃስ 22:12 ንሱ ኸኣ እተነጽፈ ኣዳራሽ ኣብ ደርቢ ኼርእየኩም እዩ፡ ኣብኡውን ኣዳልዉ።"]
+    "info": ["ናብታ ድራር ፋሲካ ዝበልዑላ ደርቢዶ ትመስል?"]
   },
   "akeldama": {
     "name1": "አከልደማ",
@@ -707,6 +707,40 @@
   "info": [
     "ካብ ከረን ሄርሞንን ካብ ናይ ሎሚ ሃገረ ዮርዳኖስ ይብገስ",
     "ብባሕሪ ገሊላ ገይሩ ናብቲ ዝተሓተ ቦታ ኣብ መሬት ናብ ምዉት ባሕሪ ይኣትው"
+  ]
+  },
+  "phenice": {
+  "id": "phenice",
+  "name1": "ፍንቄ",
+  "nameE1": "Phenice",
+  "nameM1": "",
+  "name2": "ፌንቂስ",
+  "nameE2": "Phoenicia",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/actsIsrael.jpg",
+  "info": [
+    "ሓደ ዞባ ኮይኑ ዝዓበየ ክፋል ናይ ሎሚ ሊባኖስ ገለ ክፋል እስራኤልን ሶርያን ይሓቁፍ",
+    "ጢሮስን ሲዶናን ስራጵታን ዝበሃላ ከተማታት ኣለዎ"
+  ]
+  },
+  "antioch": {
+  "id": "antioch",
+  "name1": "ኣንጾክያ",
+  "nameE1": "Antioch",
+  "nameM1": "",
+  "name2": "ኣንታክያ",
+  "nameE2": "Antakya",
+  "nameM2": "",
+  "ver": [
+    ""
+  ],
+  "gMap": "../assets/actsTurk.jpg",
+  "info": [
+    "ዓባይ ከተማ ኣብ ናይ ሎሚ ቱርኪ ትርከብ",
+    "ንመጀመርያ ኣመንቲ ክርስትያን ዝተሰመዩላ ከተማ"
   ]
   }
 }

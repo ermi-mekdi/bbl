@@ -53,6 +53,8 @@ window.word = null;
 function dP(p) {
   const d = window.ppls;
   const m = d[p];
+  const q = p.vers;
+  const k = vInP(q);
   // Add this check to prevent the error if the person 'p' isn't found
   if (!m) {
     console.error(`Person with key "${p}" not found in window.ppls`);
@@ -61,7 +63,7 @@ function dP(p) {
   const display = document.createElement("div");
   display.classList.add("person");
   display.id = "pdisplay";
-  document.body.appendChild(display);
+  document.body.appendChild(display);  
   //console.log(p);
   
   const def1 = m.nameM1 ? m.name1 + " ማለት " + m.nameM1 : "";
@@ -71,7 +73,6 @@ function dP(p) {
       ? `ካልኣይ ስም  ${m.name2}  (${m.nameE2})`
       : "";
   const info = m.info ? m.info.map((item) => `<li>${item}</li>`).join("") : "";
-  const vers = m.ver ? m.ver.map((item) => `<li>${item}</li>`).join("") : "";
   const adres = m.adres
     ? m.adres.map((item) => `<li>${item}</li>`).join("")
     : "";
@@ -91,7 +92,7 @@ function dP(p) {
   <ul>${title}</ul> 
   <h4>አድራሻ</h4>
   <ul>${adres}</ul>
-  <ul>${vers}</ul>
+  <ul>${k}</ul>
   <h4>ሓበሬታ</h4>
   <ul>${info}</ul>
   </div>
@@ -104,10 +105,11 @@ function dP(p) {
 
 function dPlc(c) {
   const d = window.plc;
-  const p = d[c];
+  const p = d[c];  
+  const q = p.vers;
 
   const display = document.createElement("div");
-  display.classList.add("person");
+  display.classList.add("plc");
   display.id = "pdisplay";
   document.body.appendChild(display);
 
@@ -117,7 +119,8 @@ function dPlc(c) {
       ? `ካልኣይ ስም  ${p.name2}  (${p.nameE2})<br>
       <h4>${p.name2 ? " ማለት " + p.nameM2 : ""}</h4>`
       : "";
-  const vers = p.vers ? p.vers.map((item) => `<li>${item}</li>`).join("") : "";
+  const k = vInP(q);
+  
   const gMap = p.gMap ? `<a href="${p.gMap}" target="_blank">Map</a>` : "";
   const info = p.info ? p.info.map((item) => `<li>${item}</li>`).join("") : "";
   display.innerHTML = `
@@ -126,7 +129,7 @@ function dPlc(c) {
   <h4>${def1}</h4>
   <h3>${def2} </h3>
   <div class= "pdetails"> 
-  <ul>${vers}</ul> 
+  <ul>${k}</ul> 
   <h4>${gMap}</h4>
   <ul>${info}</ul>
   </div>
@@ -230,7 +233,34 @@ function dV(b) {
   //console.log("Paths:", b);
   //console.log("Verses:", verses);
 }
+function vInP(b) {
+  if (!Array.isArray(b)) {
+    console.warn("dV: b should be an array of paths, got:", b);
+    return "";
+  }
 
+  const verses = b.map((path) => getVerseByPath(path)).filter((verse) => verse);
+
+  if (verses.length === 0) {
+    console.warn("No verses found for paths:", b);
+    return "";
+  }
+
+  return versP(verses);
+}
+
+function versP(t) {
+  if (!Array.isArray(t)) return "";
+
+  return t
+    .map(
+      (item) =>
+        `<div><h4>${item.n ?? ""}</h4>
+      <h4 class="vdetails">${item.d ?? ""}</h4>
+     </div>`,
+    )
+    .join("");
+}
 function vers(t) {
   const display = document.createElement("div");
   display.classList.add("person");
