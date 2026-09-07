@@ -53,8 +53,8 @@ window.word = null;
 function dP(p) {
   const d = window.ppls;
   const m = d[p];
-  const q = p.vers;
-  const k = vInP(q);
+  const q = m.vers;
+  //console.log(q)
   // Add this check to prevent the error if the person 'p' isn't found
   if (!m) {
     console.error(`Person with key "${p}" not found in window.ppls`);
@@ -63,9 +63,10 @@ function dP(p) {
   const display = document.createElement("div");
   display.classList.add("person");
   display.id = "pdisplay";
-  document.body.appendChild(display);  
-  //console.log(p);
-  
+  document.body.appendChild(display);
+  const k = vInP(q); 
+  //console.log(p);  
+  //console.log(k)
   const def1 = m.nameM1 ? m.name1 + " ማለት " + m.nameM1 : "";
   const def2 = m.nameM2 ? m.name2 + " ማለት " + m.nameM2 : "";
   const naam2 =
@@ -91,14 +92,14 @@ function dP(p) {
   <h4>ስራሕ</h4>
   <ul>${title}</ul> 
   <h4>አድራሻ</h4>
-  <ul>${adres}</ul>
-  <ul>${k}</ul>
+  <ul>${adres}</ul>  
   <h4>ሓበሬታ</h4>
   <ul>${info}</ul>
+  <ul>${k}</ul>
   </div>
   <button class="xbtn" onclick="de()">Close</button>
   `;
-  // console.log(d);
+   //console.log(k);
   // console.log(d[p]);
 }
 
@@ -128,10 +129,10 @@ function dPlc(c) {
   <h2> ${p.name1} (${p.nameE1}) </h2>  
   <h4>${def1}</h4>
   <h3>${def2} </h3>
-  <div class= "pdetails"> 
-  <ul>${k}</ul> 
+  <div class= "pdetails">    
   <h4>${gMap}</h4>
   <ul>${info}</ul>
+  <ul>${k}</ul>
   </div>
   <button class="xbtn" onclick="de()">Close</button>
   `;

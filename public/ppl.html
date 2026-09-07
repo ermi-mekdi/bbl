@@ -28,12 +28,14 @@
     </div>
      
     </div>
+    <script src="../script.js"></script>
     <script>      
       const pplListEl = document.querySelector('.js-pplList');
       const detailEl = document.querySelector('.js-pplDetail');
       let pplArray = []; // Declare outside for access in search
 
       function disPp(p){
+        
         const adres = p.adres
           ? p.adres
               .map(
@@ -45,7 +47,8 @@
         const title = p.title
           ? p.title.map((item) => `<li>${item}</li>`).join(""): "";
         const info = p.info ? p.info.map((item) => `<li>${item}</li>`).join("") : "";
-        const vers = p.ver ? p.ver.map((item) => `<li>${item}</li>`).join("") : "";
+        
+        const vers = p.vers ? p.vers.map((item) => `<li>${item}</li>`).join("") : "";
         detailEl.innerHTML = `
         <h4> ${p.name1} (${p.nameE1})</h4>
         <h4> ${p.nameM1} </h4>
@@ -54,8 +57,8 @@
         <h4> ID :  ${p.id} </h4>
         <ul>${adres}</ul>
         <ul>${title}</ul>
-        <ul>${vers}</ul>
         <ul>${info}</ul>
+        <ul>${vers}</ul>
         `
       }
 

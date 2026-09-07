@@ -176,7 +176,7 @@
     "vers": [""],
     "gMap": "../assets/paul3.jpg",
     "info": [
-      "Phrygia was an ancient kingdom located in west-central Anatolia, which is part of modern-day Turkey. It stretched across the Anatolian plateau, with its heartland centered around the Sangarios (Sakarya) River."
+      "Phrygia was an ancient kingdom located in west-central Anatolia, which is part of modern-day Turkey. It stretched across the Anatolian plateau, with its heartland centered around the Sangarios (Sakarya) Rivers."
     ]
   },
   "pamphylia": {
@@ -217,13 +217,13 @@
     "info": [""]
   },
   "cyrene": {
-    "name1": "ቀሬን ",
+    "name1": "ቀሬን",
     "nameE1": "Cyrene ",
     "nameM1": "ልኡላውነት ወይ ልእልቲ ",
     "name2": " ",
     "nameE2": " ",
     "nameM2": " ",
-    "vers": [""],
+    "vers": ["n.mat.c27.v32","n.act.c13.v1","n.act.c6.v9","n.act.c2.v10"],
     "gMap": "../assets/kushLibyaIran.jpg",
     "info": [
       "Cyrene was an ancient Greek colony located in northeastern Libya, in North Africa. Today, its ruins lie near the modern town of Shahhat, in the Jebel Akhdar (Green Mountain) region of Cyrenaica",
@@ -540,7 +540,7 @@
   "name2": "ኣሽዶድ (ብእብራይስጥ)",
   "nameE2": "Ashdod",
   "nameM2": "ዝተዓርደ፡ ጽኑዕ ቦታ",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/actsIsrael.jpg",
@@ -557,7 +557,7 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/JerusalemGaza.jpg",
@@ -574,7 +574,7 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/acts1.jpg",
@@ -591,7 +591,7 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/actsIsrael.jpg",
@@ -610,7 +610,7 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/actsIsrael.jpg",
@@ -628,7 +628,7 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/paul2&3.jpg",
@@ -645,7 +645,7 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/actsIsrael.jpg",
@@ -663,7 +663,7 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/actsIsrael.jpg",
@@ -683,7 +683,7 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/actsIsrael.jpg",
@@ -692,15 +692,15 @@
     "ኣብ ሞንጎ ዮጴን ቂሳርያን ይርከብ"
   ]
   },
-  "jordanRiver": {
-  "id": "jordanRiver",
+  "jordanRivers": {
+  "id": "jordanRivers",
   "name1": "ዮርዳኖስ",
   "nameE1": "Jordan",
   "nameM1": "ምውራድ ወይ ወራዲ",
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/actsIsrael.jpg",
@@ -717,7 +717,7 @@
   "name2": "ፌንቂስ",
   "nameE2": "Phoenicia",
   "nameM2": "",
-  "ver": [
+  "vers": [
     ""
   ],
   "gMap": "../assets/actsIsrael.jpg",
@@ -734,9 +734,7 @@
   "name2": "ኣንታክያ",
   "nameE2": "Antakya",
   "nameM2": "",
-  "ver": [
-    ""
-  ],
+  "vers": ["n.act.c11.v20","n.act.c11.v21","n.act.c11.v25","n.act.c11.v26"],
   "gMap": "../assets/actsTurk.jpg",
   "info": [
     "ዓባይ ከተማ ኣብ ናይ ሎሚ ቱርኪ ትርከብ",
