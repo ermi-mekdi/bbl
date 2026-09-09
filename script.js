@@ -122,7 +122,7 @@ function dPlc(c) {
       : "";
   const k = vInP(q);
   
-  const gMap = p.gMap ? `<a href="${p.gMap}" target="_blank">Map</a>` : "";
+  const gMap = p.gMap ? `<a href="${p.gMap}" target="_blank"><img src="${p.gMap}" alt="Map" width="200px" height="100px"></a>` : "";
   const info = p.info ? p.info.map((item) => `<li>${item}</li>`).join("") : "";
   display.innerHTML = `
   <div onclick="de()" class="x">X</div> 
@@ -130,7 +130,7 @@ function dPlc(c) {
   <h4>${def1}</h4>
   <h3>${def2} </h3>
   <div class= "pdetails">    
-  <h4>${gMap}</h4>
+  <div class="map-container">${gMap}</div>
   <ul>${info}</ul>
   <ul>${k}</ul>
   </div>

@@ -135,7 +135,7 @@ a {
   width: 90%;
   max-width: 700px;
   height: 75%;
-  background-color: rgba(116, 208, 116, 0.894);
+  background-color: rgba(126, 175, 100, 0.894);
   z-index: 2;
   position: fixed;
   top: 20%;
@@ -148,6 +148,12 @@ a {
   border: none;
   border-radius: 10px;
   padding-bottom: 5px;
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  border-radius: 10px;
 }
 .sex {
   display: flex;
@@ -163,7 +169,7 @@ a {
 }
 .vdetails {
   text-align: left;
-  margin-left: 3px;
+  margin-left: 4px;
   font-weight: normal;
   margin-top: 0px;
   margin-bottom: 8px;
