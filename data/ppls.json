@@ -596,13 +596,13 @@
     "name1": "ኣውጉስጦስ",
     "nameE1": "Augustus",
     "nameM1": "ዘብዝሕ፡ ዘዕብይ",
-    "name2": " ",
-    "nameE2": "",
-    "nameM2": "",
+    "name2": "ኦክታቪያን",
+    "nameE2": "Octavian",
+    "nameM2": "ሻምናይ",
     "vers": [""],
     "title": ["ገዛኢ ግዝኣት ሮማ", "ንጉስ"],
     "adres": ["ሮማ"],
-    "info": [""],
+    "info": ["ኦክታቪያን ናይ ቤተሰብ ስም እዩ። ኣውጉስጦስ ግን ናብ ንግስነት ምስ ደየበ ዝለበሶ ስም እዩ"],
     "man": true
   },
   "quirinius": {
@@ -1072,7 +1072,7 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "vers": ["n.act.c11.v28"],
+  "vers": ["n.act.c11.v28","n.act.c21.v10"],
   "title": [
     "ነብይ"
   ],
@@ -1092,15 +1092,60 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "vers": ["n.act.c11.v28"],
-  "title": [
-    "ንጉስ ግዝኣት ሮማ"
-  ],
-  "adres": [
-    ""
-  ],
+  "vers": ["n.act.c11.v28","n.act.c18.v2"],
+  "title": [ "ንጉስ ግዝኣት ሮማ" ],
+  "adres": [  ""  ],
   "info": [
-    "ኣብ ናይ ሮማ ግዝኣት ንጉስ እዩ፡ ካብ 41ዓም ክሳብ 54ዓም ገዚኡ፡ ኣብ ዘመኑ ኣብ ሮማ ግዝኣት ዝተመረጸ"  
+    "ኣብ ናይ ሮማ ግዝኣት ንጉስ እዩ፡ ካብ 41ዓም ክሳብ 54ዓም ገዚኡ"  
+  ]
+ },
+ "maryMark":{
+  "man": false,
+  "id": "maryMark",
+  "name1": "ማርያም",
+  "nameE1": "Mary",
+  "nameM1": "ብርህው/ብርሃን",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": ["n.act.c12.v12"],
+  "title": [ ""],
+  "adres": ["" ],
+  "info": [
+    "ኣደ እቲ ማርቆስ ዚብሀል ዮሃንስ"  
+  ]
+ },
+ "markJohn":{
+  "man": true,
+  "id": "markJohn",
+  "name1": "ማርቆስ",
+  "nameE1": "Mark",
+  "nameM1": "",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": ["n.act.c12.v12"],
+  "title": ["ወንጌላዊ"],
+  "adres": [ "" ],
+  "info": [
+    ""  
+  ]
+ },
+ "herodesAgrippa":{
+  "man": true,
+  "id": "herodesAgrippa",
+  "name1": "ሄሮድስ አግሪፓ",
+  "nameE1": "Herod Agrippa",
+  "nameM1": "",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": ["n.act.c12.v1"],
+  "title": ["ኣማሓዳሪ ይሁዳን ሰማርያን"],
+  "adres": ["የሩሳሌም", "ቂሳርያ"],
+  "info": [
+    "ወዲ ወዱ ንሄሮድስ ዓቢ እዩ",
+    "ካብ 41ዓም ክሳብ 44ዓም ኣብ ይሁዳን ሰማርያን ገዚኡ"
   ]
  }
 }
