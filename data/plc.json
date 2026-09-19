@@ -262,7 +262,7 @@
     "nameE2": " ",
     "nameM2": " ",
     "vers": [""],
-    "gMap": "https://maps.app.goo.gl/Tjo2tquCTZ2KgSQ3A",
+    "gMap": "../assets/tempelJesus.jpg",
     "info": [
       "ኣብ ብሉይ ኪዳን ፡ ሓደ ታቦት፡ ሓንቲ ቤተ መቅደስ",
       "ብሰለሞን ዝተሃንጸት ቤተ መቅደስ፡",
@@ -283,11 +283,12 @@
     "name2": " ",
     "nameE2": " ",
     "nameM2": " ",
-    "vers": ["ዮሃንስ 10:23"],
+    "vers": ["n.joh.c10.v23"],
     "gMap": "",
     "info": [
       "ብወገን ምብራቅ ናይ ቤት መቅደስ ዝርከብ ኮይኑ ንመምሃርን ንመካቲዕን መጸለይን ኣብቲ ግዜ ይጥቀሙሉ ነይሮም።",
-      "ሃዋርያት ነዚ ከም መስበኺ ይጥቀሙሉ ነይሮም"
+      "ሃዋርያት ነዚ ከም መስበኺ ይጥቀሙሉ ነይሮም",
+      "ዮሃንስ 10:23"
     ]
   },
   "beautiful": {
@@ -298,10 +299,10 @@
     "nameE2": " ",
     "nameM2": " ",
     "vers": [""],
-    "gMap": "https://www.ritmeyer.com/2010/12/14/the-beautiful-gate-of-the-temple/",
+    "gMap": "../assets/tempelJesus.jpg",
     "info": [
       "እዛ ጽብቕቲ ደገ ኣብ መጽሓፍ ቅዱስ ሓንሳእ ጥራይ እያ ተጠቒሳ ዘላ፡",
-      "ብዛዕባኣ ካብ ዝረኣኽዎ ሓበሬታ ኣብ map ጠውቑ።"
+      "ብዛዕባኣ ካብ ዝረኣኽዎ ሓበሬታ  <a href=\"https://www.ritmeyer.com/2010/12/14/the-beautiful-gate-of-the-temple/\">ኣብዚ </a>ጠውቑ።"
     ]
   },
   "cyprus": {
