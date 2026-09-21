@@ -1124,9 +1124,9 @@
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "vers": ["n.act.c12.v12"],
+  "vers": ["n.act.c12.v12","n.act.c12.v25"],
   "title": ["ወንጌላዊ"],
-  "adres": [ "" ],
+  "adres": [ "ዓዱ ቆጵሮስ" ],
   "info": [
     ""  
   ]
@@ -1136,7 +1136,7 @@
   "id": "herodesAgrippa",
   "name1": "ሄሮድስ አግሪፓ",
   "nameE1": "Herod Agrippa",
-  "nameM1": "",
+  "nameM1": "ወዲ ጅግና፡ እቲ ጅግና",
   "name2": "",
   "nameE2": "",
   "nameM2": "",
@@ -1147,5 +1147,77 @@
     "ወዲ ወዱ ንሄሮድስ ዓቢ እዩ",
     "ካብ 41ዓም ክሳብ 44ዓም ኣብ ይሁዳን ሰማርያን ገዚኡ"
   ]
+ },
+ "herodesGalilea":{
+  "man": true,
+  "id": "herodesGalilea",
+  "name1": "ሄሮድስ",
+  "nameE1": "Herod",
+  "nameM1": "ወዲ ጅግና፡ እቲ ጅግና",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": [""],
+  "title": ["ኣማሓዳሪ ዞባ ገሊላ"],
+  "adres": [""],
+  "info": [
+    "ኣብ ስቕለት ኢየሱስ ኣማሓዳሪ ገሊላ ዝነበረ እዩ"
+  ]
+ },
+ "rhodaMaria":{
+  "man": false,
+  "id": "rhodaMaria",
+  "name1": "ሮዳ",
+  "nameE1": "Rhoda",
+  "nameM1": "ዕምባባ ሮዛ",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": ["n.act.c12.v13","n.act.c12.v14"],
+  "title": ["ግዝእቲ"],
+  "adres": [""],
+  "info": ["ሮዛ ምልክት ሓጎስ፡ ጽባቐ፡ እምነት፡ ምቑልልነት"]
+ },
+ "jamesJesus":{
+  "man": true,
+  "id": "jamesJesus",
+  "name1": "ያእቆብ",
+  "nameE1": "James",
+  "nameM1": "ሓንኳሊ",
+  "name2": "ያዕቆብ",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": ["n.act.c12.v17"],
+  "title": ["ሃዋርያ","ሓው ጎይታ"],
+  "adres": ["ነባሪ ናዝሬት", "የሩሳሌም"],
+  "info": [""]
+ },
+ "blastus":{
+  "man": true,
+  "id": "blastus",
+  "name1": "ብላስጦስ",
+  "nameE1": "Blastus",
+  "nameM1": "ምጭብጫብ መጥጣዕ",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": [""],
+  "title": ["ሸለቃ"],
+  "adres": ["ቂሳርያ"],
+  "info": [""]
+ },
+ "":{
+  "man": true,
+  "id": "",
+  "name1": "",
+  "nameE1": "",
+  "nameM1": "",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": [""],
+  "title": [""],
+  "adres": [""],
+  "info": [""]
  }
 }

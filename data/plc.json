@@ -337,7 +337,7 @@
     "nameE2": " ",
     "nameM2": " ",
     "vers": [""],
-    "gMap": "https://ermi-mekdi.github.io/Acts/assets/acts1.jpg",
+    "gMap": "../assets/acts1.jpg",
     "info": [""]
   },
   "libertines": {
@@ -740,6 +740,34 @@
   "info": [
     "ዓባይ ከተማ ኣብ ናይ ሎሚ ቱርኪ ትርከብ",
     "ንመጀመርያ ኣመንቲ ክርስትያን ዝተሰመዩላ ከተማ"
+  ]
+  },
+  "tyreLibanon": {
+  "id": "tyreLibanon",
+  "name1": "ጢሮስ",
+  "nameE1": "Tyre",
+  "nameM1": "ከውሒ ኣጻድፍ",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": ["n.act.c12.v20", "n.mat.c11.v21","n.mat.c15.v21"],
+  "gMap": "../assets/actsIsrael.jpg",
+  "info": [
+    ""
+  ]
+  },
+  "sidonLibanon": {
+  "id": "sidonLibanon",
+  "name1": "ሲዶና",
+  "nameE1": "Sidon",
+  "nameM1": "ምግፋፍ ዓሳ",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": ["n.act.c12.v20"],
+  "gMap": "../assets/actsIsrael.jpg",
+  "info": [
+    ""
   ]
   }
 }
