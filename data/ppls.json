@@ -523,8 +523,8 @@
   },
   "herodJuda": {
     "id": "herodJuda",
-    "name1": "ሄሮድስ",
-    "nameE1": "Herod",
+    "name1": "ሄሮድስ ዓቢ",
+    "nameE1": "Herod the Great",
     "nameM1": "ወዲ ጅግና፡ እቲ ጅግና",
     "name2": " ",
     "nameE2": "",
@@ -819,8 +819,8 @@
   },
   "herodGalilee": {
     "id": "herodGalilee",
-    "name1": "ሄሮዶስ",
-    "nameE1": "Herod",
+    "name1": "ሄሮዶስ ኣንቲጳስ",
+    "nameE1": "Herod Antipas",
     "nameM1": "ወዲ ጅግና፡ እቲ ጅግና",
     "name2": " ",
     "nameE2": "",
@@ -828,18 +828,18 @@
     "vers": [""],
     "title": ["ኣማሓዳሪ ዞባ ገሊላ"],
     "adres": ["ገሊላ"],
-    "info": ["ንዮሃንስ ዝኣሰሮ "],
+    "info": ["ንዮሃንስ መጥማቕ ዝኣሰሮ ዘሰየፎ "],
     "man": true
   },
   "philipHerod": {
     "id": "philipHerod",
-    "name1": "ፊልጶስ",
-    "nameE1": "Philip",
+    "name1": "ፊልጶስ ሄሮዶስ",
+    "nameE1": "Herod Philip",
     "nameM1": "ንፈረስ ዘፍቅር(ዓርኪ）",
     "name2": " ",
     "nameE2": "",
     "nameM2": "",
-    "vers": [""],
+    "vers": ["n.luk.c3.v1"],
     "title": ["ኣማሓዳሪ  ኢጡርያን ጥራኮኒቲስን"],
     "adres": [""],
     "info": ["ሓዉ ሄሮዶስ"],
@@ -1144,24 +1144,39 @@
   "title": ["ኣማሓዳሪ ይሁዳን ሰማርያን"],
   "adres": ["የሩሳሌም", "ቂሳርያ"],
   "info": [
-    "ወዲ ወዱ ንሄሮድስ ዓቢ እዩ",
-    "ካብ 41ዓም ክሳብ 44ዓም ኣብ ይሁዳን ሰማርያን ገዚኡ"
+    "ወዲ ወዱ <strong onclick=\"dP('herodJuda')\" class=\"hy\">ንሄሮድስ ዓቢ</strong> እዩ",
+    "ካብ 41ዓም ክሳብ 44ዓም ኣብ ይሁዳን ሰማርያን ገዚኡ",
+    "ንሃዋርያ ያዐቆብ ዘሰየፈ እዩ።"
   ]
  },
- "herodesGalilea":{
+ "herodesAgrippa2":{
   "man": true,
-  "id": "herodesGalilea",
-  "name1": "ሄሮድስ",
-  "nameE1": "Herod",
+  "id": "herodesAgrippa2",
+  "name1": "ሄሮድስ አግሪፓ ካልኣይ",
+  "nameE1": "Herod Agrippa",
   "nameM1": "ወዲ ጅግና፡ እቲ ጅግና",
   "name2": "",
   "nameE2": "",
   "nameM2": "",
-  "vers": [""],
-  "title": ["ኣማሓዳሪ ዞባ ገሊላ"],
+  "vers": ["n.act.c25.v13","n.act.c26.v1","n.act.c26.v27","n.act.c26.v28"],
+  "title": [""],
+  "adres": [""],
+  "info": [ "ወዱ <strong onclick=\"dP('herodesAgrippa')\" class=\"hy\">ንሄሮድስ ዓቢ</strong> እዩ" ]
+ },
+ "herodArchelaus":{
+  "man": true,
+  "id": "herodArchelaus",
+  "name1": "ሄሮድስ ኣርኬላዎስ",
+  "nameE1": "Herod Archelaus",
+  "nameM1": "ወዲ ጅግና፡ እቲ ጅግና",
+  "name2": "",
+  "nameE2": "",
+  "nameM2": "",
+  "vers": ["n.mat.c2.v22"],
+  "title": ["ኣማሓዳሪ ዞባ ይሁዳ"],
   "adres": [""],
   "info": [
-    "ኣብ ስቕለት ኢየሱስ ኣማሓዳሪ ገሊላ ዝነበረ እዩ"
+    ""
   ]
  },
  "rhodaMaria":{
