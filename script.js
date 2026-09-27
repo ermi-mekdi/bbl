@@ -7,7 +7,7 @@ window.ppls = null;
     const res = await fetch("../data/ppls.json");
     if (!res.ok) throw new Error(res.status);
     window.ppls = await res.json();
-    //console.log("ppls loaded", window.ppls);
+    console.log("ppls loaded", window.ppls);
   } catch (err) {
     console.error("Failed to load ppls.json", err);
     window.ppls = {};
@@ -51,12 +51,12 @@ window.word = null;
 })();
 
 function dP(p) {
-  const d = window.ppls;
-  const m = d[p];
-  const q = m.vers;
-  //console.log(q)
-  // Add this check to prevent the error if the person 'p' isn't found
-  if (!m) {
+  const ppls = window.ppls;
+  const person = typeof p === "string"
+    ? Array.isArray(ppls) ? ppls.find((item) => item.id === p) : ppls?.[p]
+    : p;
+
+  if (!person || typeof person !== "object") {
     console.error(`Person with key "${p}" not found in window.ppls`);
     return;
   }
@@ -64,27 +64,25 @@ function dP(p) {
   display.classList.add("person");
   display.id = "pdisplay";
   document.body.appendChild(display);
-  const k = vInP(q); 
-  //console.log(p);  
-  //console.log(k)
-  const def1 = m.nameM1 ? m.name1 + " ማለት " + m.nameM1 : "";
-  const def2 = m.nameM2 ? m.name2 + " ማለት " + m.nameM2 : "";
+  const k = person.vers ? vInP(person.vers) : "";
+  const def1 = person.nameM1 ? person.name1 + " ማለት " + person.nameM1 : "";
+  const def2 = person.nameM2 ? person.name2 + " ማለት " + person.nameM2 : "";
   const naam2 =
-    m && m.name2 && String(m.name2).trim() !== ""
-      ? `ካልኣይ ስም  ${m.name2}  (${m.nameE2})`
+    person.name2 && String(person.name2).trim() !== ""
+      ? `ካልኣይ ስም  ${person.name2}  (${person.nameE2})`
       : "";
-  const info = m.info ? m.info.map((item) => `<li>${item}</li>`).join("") : "";
-  const adres = m.adres
-    ? m.adres.map((item) => `<li>${item}</li>`).join("")
+  const info = person.info ? person.info.map((item) => `<li>${item}</li>`).join("") : "";
+  const adres = person.adres
+    ? person.adres.map((item) => `<li>${item}</li>`).join("")
     : "";
-  const title = m.title
-    ? m.title.map((item) => `<li>${item}</li>`).join("")
+  const title = person.title
+    ? person.title.map((item) => `<li>${item}</li>`).join("")
     : "";
 
   display.innerHTML = `
   <div onclick="de()" class="x">X</div>
   
-  <h2> ስም ${m.name1} (${m.nameE1}) </h2>
+  <h2> ስም ${person.name1} (${person.nameE1}) </h2>
   <h4>${def1}</h4>
   <h3> ${naam2} </h3>  
   <h4>${def2} </h4> 
@@ -99,8 +97,6 @@ function dP(p) {
   </div>
   <button class="xbtn" onclick="de()">Close</button>
   `;
-   //console.log(k);
-  // console.log(d[p]);
 }
 
 
