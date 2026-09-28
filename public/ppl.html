@@ -59,6 +59,7 @@
         <ul>${title}</ul>
         <ul>${info}</ul>
         <ul>${vers}</ul>
+        <button onclick='edit(b)'>Edit/Creat</button>
         `
       }
 
@@ -105,6 +106,17 @@
               pplListEl.appendChild(li);
             });
         });
+             ////Edit//
+        function edit(b){
+          const h = person
+          const dialog = createElement('dialog')
+          dialog.classList.add('person')
+          document.body.appendChild(dialog);
+          dialog.innerHTML =`
+          <div>person.name1</div>
+          <button class="xbtn" onclick="de()">Close</button>
+          `;
+        }
 
         
 
