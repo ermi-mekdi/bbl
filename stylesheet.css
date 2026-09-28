@@ -225,21 +225,23 @@ u {
 }
 .list {
   display: flex;
-
+  margin-left: 0px;
   margin: 3%;
 }
 .ppl {
-  width: 30%;
+  width: 40%;
   border: none;
   border-radius: 8px;
   background-color: #b3a88a;
   margin-right: 3%;
+  margin-left: 0%;
 }
 .js-pplList {
   list-style-type: none;
   padding: 10px;
   margin: 0;
   height: auto;
+  width: auto;
   max-height: 85vh;
   overflow-y: auto;
 }
