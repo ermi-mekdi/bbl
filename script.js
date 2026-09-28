@@ -100,29 +100,37 @@ function dP(p) {
 }
 
 
-function dPlc(c) {
-  const d = window.plc;
-  const p = d[c];  
-  const q = p.vers;
+function dPlc(p) {
+  const plc = window.plc;
+  const place = typeof p === "string"
+    ? Array.isArray(plc) ? plc.find((item) => item.id === p) : plc?.[p]
+    : place;
+
+  if (!place || typeof place !== "object") {
+    console.error(`place with key "${p}" not found in window.plc`);
+    return;
+  }
+  //const p = c;  
+  const q = place.vers;
 
   const display = document.createElement("div");
   display.classList.add("plc");
   display.id = "pdisplay";
   document.body.appendChild(display);
 
-  const def1 = p.nameM1 ? p.name1 + " ማለት " + p.nameM1 : "";
+  const def1 = place.nameM1 ? place.name1 + " ማለት " + place.nameM1 : "";
   const def2 =
-    p && p.name2 && String(p.name2).trim() !== ""
-      ? `ካልኣይ ስም  ${p.name2}  (${p.nameE2})<br>
-      <h4>${p.name2 ? " ማለት " + p.nameM2 : ""}</h4>`
+    place && place.name2 && String(place.name2).trim() !== ""
+      ? `ካልኣይ ስም  ${place.name2}  (${place.nameE2})<br>
+      <h4>${place.name2 ? " ማለት " + place.nameM2 : ""}</h4>`
       : "";
   const k = vInP(q);
   
-  const gMap = p.gMap ? `<a href="${p.gMap}" target="_blank"><img src="${p.gMap}" alt="Map" width="200px" height="100px"></a>` : "";
-  const info = p.info ? p.info.map((item) => `<li>${item}</li>`).join("") : "";
+  const gMap = place.gMap ? `<a href="${place.gMap}" target="_blank"><img src="${place.gMap}" alt="Map" width="200px" height="100px"></a>` : "";
+  const info = place.info ? place.info.map((item) => `<li>${item}</li>`).join("") : "";
   display.innerHTML = `
   <div onclick="de()" class="x">X</div> 
-  <h2> ${p.name1} (${p.nameE1}) </h2>  
+  <h2> ${place.name1} (${place.nameE1}) </h2>  
   <h4>${def1}</h4>
   <h3>${def2} </h3>
   <div class= "pdetails">    

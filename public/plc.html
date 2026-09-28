@@ -17,8 +17,10 @@
             <input id="searchInput" type="text" placeholder="Search names..."> <button id="searchButton" type="button">search</button>
           </form>
           <div class="js-pplList">   </div>
-        </div>
+        </div>        
         <div class="detaile">
+          <div>          
+      </div>
           <h2>ሓበሬታ ቦታ</h2>
           <div class="js-pplDetail"></div>
 
@@ -37,7 +39,7 @@
         const info = p.info ? p.info.map((item) => `<li>${item}</li>`).join('') : '';
         const vers = p.ver ? p.ver.map((item) => `<li>${item}</li>`).join('') : '';
         const gMap = p.gMap ? `<a href="${p.gMap}" target="_blank">Map</a>` : '';
-        detailEl.innerHTML = `
+        detailEl.innerHTML = `        
         <h4> ${p.name1 || ''} (${p.nameE1 || ''})</h4>
         <h4> ${p.nameM1 || ''} </h4>
         <h4> ${p.name2 || ''} ${p.nameE2 || ''}</h4>

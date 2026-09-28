@@ -5,6 +5,7 @@ const path = require('path');
 const app = express();
 const projectRoot = path.join(__dirname, '..');
 const dataFile = path.join(projectRoot, 'data', 'ppls.json');
+const dataFilePlc = path.join(projectRoot, 'data', 'plc.json');
 const port = process.env.PORT || 3000;
 
 app.use(express.json({ limit: '1mb' }));
@@ -15,6 +16,7 @@ async function readPpls() {
 		throw new Error('ppls.json must contain a JSON array');
 	}
 	return ppls;
+	
 }
 
 async function writePpls(ppls) {
@@ -23,9 +25,34 @@ async function writePpls(ppls) {
 	await fs.rename(temporaryFile, dataFile);
 }
 
+async function readPlc() {
+	const plc = JSON.parse(await fs.readFile(dataFilePlc, 'utf8'));
+	if (!Array.isArray(plc)) {
+		throw new Error('plc.json must contain a JSON array');
+	}
+	return plc;
+}
+
+async function writePlc(plc) {
+	const temporaryFile = `${dataFilePlc}.${process.pid}.tmp`;
+	await fs.writeFile(temporaryFile, `${JSON.stringify(plc, null, 2)}\n`, 'utf8');
+	await fs.rename(temporaryFile, dataFilePlc);
+}
+
 function validPpl(ppl) {
 	return ppl && typeof ppl === 'object' && !Array.isArray(ppl) &&
 		typeof ppl.id === 'string' && ppl.id.trim().length > 0;
+}
+
+function validPlcRecord(record) {
+	return record && typeof record === 'object' && !Array.isArray(record) &&
+		typeof record.id === 'string' && record.id.trim().length > 0 &&
+		['name1', 'nameE1'].some((field) => typeof record[field] === 'string' && record[field].trim());
+}
+
+function parsePlcIndex(value) {
+	if (!/^\d+$/.test(value)) return -1;
+	return Number(value);
 }
 
 app.get('/api/admin/ppls', async (req, res) => {
@@ -74,6 +101,60 @@ app.delete('/api/admin/ppls/:id', async (req, res) => {
 
 	ppls.splice(index, 1);
 	await writePpls(ppls);
+	res.status(204).end();
+});
+
+app.get('/api/admin/plc', async (req, res) => {
+	res.json(await readPlc());
+});
+
+app.post('/api/admin/plc', async (req, res) => {
+	const record = req.body;
+	if (!validPlcRecord(record)) {
+		return res.status(400).json({ error: 'A place with a non-empty id and name is required.' });
+	}
+	record.id = record.id.trim();
+
+	const plc = await readPlc();
+	if (record.id && plc.some((item) => item.id === record.id)) {
+		return res.status(409).json({ error: `A record with id "${record.id}" already exists.` });
+	}
+
+	plc.push(record);
+	await writePlc(plc);
+	res.status(201).json(record);
+});
+
+app.put('/api/admin/plc/:index', async (req, res) => {
+	const index = parsePlcIndex(req.params.index);
+	const record = req.body;
+	if (!validPlcRecord(record)) {
+		return res.status(400).json({ error: 'A place with a non-empty id and name is required.' });
+	}
+	record.id = record.id.trim();
+
+	const plc = await readPlc();
+	if (index < 0 || index >= plc.length) {
+		return res.status(404).json({ error: 'Record not found.' });
+	}
+	if (record.id && plc.some((item, itemIndex) => itemIndex !== index && item.id === record.id)) {
+		return res.status(409).json({ error: `A record with id "${record.id}" already exists.` });
+	}
+
+	plc[index] = record;
+	await writePlc(plc);
+	res.json(record);
+});
+
+app.delete('/api/admin/plc/:index', async (req, res) => {
+	const index = parsePlcIndex(req.params.index);
+	const plc = await readPlc();
+	if (index < 0 || index >= plc.length) {
+		return res.status(404).json({ error: 'Record not found.' });
+	}
+
+	plc.splice(index, 1);
+	await writePlc(plc);
 	res.status(204).end();
 });
 

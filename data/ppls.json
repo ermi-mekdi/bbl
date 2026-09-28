@@ -797,10 +797,10 @@
     ],
     "info": [
       "ኣብ ልደት ዮሃንስን ኢየሱስን ንጉስ ይሁዳ ዝነበረ እዩ",
-      "ካብ 37ዓዓ ክሳብ 4 ዓም ገዚኡ",
+      "ካብ 37ዓዓ ክሳብ 4 ዓዓ ገዚኡ",
       "ንቤተ መቕደስ ኣሐዲሱ",
       "ንቂሳርያ ሃኒጹ",
-      "ብፍርቂጎኑ ኤዶማዊ እዩ"
+      "ኤዶማዊ ዓሌት ኣለዎ።"
     ],
     "man": true
   },
@@ -1640,7 +1640,7 @@
     "man": true,
     "id": "herodesAgrippa",
     "name1": "ሄሮድስ አግሪፓ",
-    "nameE1": "Herod Agrippa",
+    "nameE1": "Herod Agrippa I",
     "nameM1": "ወዲ ጅግና፡ እቲ ጅግና",
     "name2": "",
     "nameE2": "",
@@ -1658,14 +1658,14 @@
     "info": [
       "ወዲ ወዱ <strong onclick=\"dP('herodJuda')\" class=\"hy\">ንሄሮድስ ዓቢ</strong> እዩ",
       "ካብ 41ዓም ክሳብ 44ዓም ኣብ ይሁዳን ሰማርያን ገዚኡ",
-      "ንሃዋርያ ያዐቆብ ዘሰየፈ እዩ።"
+      "ንሃዋርያ ያዕቆብ ዘሰየፈ እዩ።"
     ]
   },
   {
     "man": true,
     "id": "herodesAgrippa2",
     "name1": "ሄሮድስ አግሪፓ ካልኣይ",
-    "nameE1": "Herod Agrippa",
+    "nameE1": "Herod Agrippa II",
     "nameM1": "ወዲ ጅግና፡ እቲ ጅግና",
     "name2": "",
     "nameE2": "",
@@ -1683,7 +1683,7 @@
       ""
     ],
     "info": [
-      "ወዱ <strong onclick=\"dP('herodesAgrippa')\" class=\"hy\">ንሄሮድስ ዓቢ</strong> እዩ"
+      "ወዱ <strong onclick=\"dP('herodesAgrippa')\" class=\"hy\">ንሄሮድስ ኣግሪጳ</strong> እዩ"
     ]
   },
   {
