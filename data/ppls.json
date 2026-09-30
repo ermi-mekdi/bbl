@@ -257,7 +257,7 @@
       ""
     ],
     "info": [
-      "ኣብ ወንጌል ዮውሃንስ ናትናኤል ዝበሃል ንሱ ምዃኑ ይግመት"
+      "ኣብ ወንጌል ዮውሃንስ ናትናኤል ዝበሃል ንሱ ምዃኑ ይእመን"
     ],
     "man": true
   },
@@ -351,7 +351,7 @@
   },
   {
     "id": "maryJ",
-    "name1": "ማርያም",
+    "name1": "ማርያም ኣደ ጎይታ",
     "nameE1": "Mary",
     "nameM1": " ብርህው/ብርሃን",
     "name2": "",
@@ -535,7 +535,7 @@
   },
   {
     "id": "annaHPriest",
-    "name1": "ሃና",
+    "name1": "ሃና ሊቀ ካህናት",
     "nameE1": "Annas",
     "nameM1": "ጸጋ፡ ፍትዊ",
     "name2": "",
@@ -1571,7 +1571,7 @@
   {
     "man": true,
     "id": "claudiusCaesar",
-    "name1": "ቅላውዲዩስ",
+    "name1": "ቄሳር ቅላውዲዩስ",
     "nameE1": "Claudius",
     "nameM1": "ልሙስ/ሓንካስ",
     "name2": "",
@@ -1594,7 +1594,7 @@
   {
     "man": false,
     "id": "maryMark",
-    "name1": "ማርያም",
+    "name1": "ማርያም ኣደ ማርቆስ",
     "nameE1": "Mary",
     "nameM1": "ብርህው/ብርሃን",
     "name2": "",
@@ -1735,7 +1735,7 @@
   {
     "man": true,
     "id": "jamesJesus",
-    "name1": "ያእቆብ",
+    "name1": "ያእቆብ ሓው ጎይታ",
     "nameE1": "James",
     "nameM1": "ሓንኳሊ",
     "name2": "ያዕቆብ",

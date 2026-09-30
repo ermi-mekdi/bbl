@@ -12,14 +12,16 @@
     <div class="bo">
       <div class="list">
         <div class="ppl">
-          <h2>ኣስማት ሰባት</h2>
-          <form>
-            <input id="searchInput" type="text" placeholder="Search names..."> <button id="searchButton" type="button">search</button>
-          </form>
-         
-          <div class="js-pplList">   </div>
+            <h2>ኣስማት ሰባት</h2>
+            <form >
+              <input id="searchInput" type="text" placeholder="ስም ወይ ናይ መጀመርያ ፊደል">
+              <button id="searchButton" type="button">
+                ፈትሽ/ድለይ</button>
+            </form>          
+            <div class="js-pplList">   </div>
         </div>
-        <div class="detaile">
+
+        <div class="vdetaile">
           <h2>ሓበሬታ ሰባት</h2>
           <div class="js-pplDetail"></div>
 
@@ -33,9 +35,11 @@
       const pplListEl = document.querySelector('.js-pplList');
       const detailEl = document.querySelector('.js-pplDetail');
       let pplArray = []; // Declare outside for access in search
+      fetch('../data/ver.json')
+        .then(r => r.json())// load json
 
       function disPp(p){
-        
+        const k = p.vers ? vInP(p.vers) : "";
         const adres = p.adres
           ? p.adres
               .map(
@@ -54,11 +58,11 @@
         <h4> ${p.nameM1} </h4>
         <h4> ${p.name2} ${p.nameE2}</h4>
         <h4> ${p.nameM2} </h4>
-        <h4> ID :  ${p.id} </h4>
-        <ul>${adres}</ul>
-        <ul>${title}</ul>
-        <ul>${info}</ul>
-        <ul>${vers}</ul>
+        
+        <div>${adres}</div>
+        <div>${title}</div>
+        <div>${info}</div>
+        <div>${k}</div>
         `
       }
 
@@ -95,7 +99,7 @@
 
               const li = document.createElement('li');
               li.style.cursor = 'pointer';
-              li.textContent = person.name1 +' '+ person.name2+' '+ person.id || person.nameE1 || person.name || 'Unknown';
+              li.textContent = person.name1 || person.nameE1 || person.name || 'Unknown';
 
               li.addEventListener('click', () => {
                 if (typeof disPp === 'function') disPp(person);
@@ -123,7 +127,7 @@
                 const name1 = (person.name1 || '').toLowerCase();
                 const name2 = (person.name2 || '').toLowerCase();
                 const nameE1 = (person.nameE1 || '').toLowerCase();
-                const name = (person.name || '').toLowerCase();
+                const name = (person.nameE2 || '').toLowerCase();
                 return name1.includes(query) || name2.includes(query) || nameE1.includes(query) || name.includes(query);
               });
               renderList(filtered);

@@ -7,7 +7,7 @@ window.ppls = null;
     const res = await fetch("../data/ppls.json");
     if (!res.ok) throw new Error(res.status);
     window.ppls = await res.json();
-    console.log("ppls loaded", window.ppls);
+    //console.log("ppls loaded", window.ppls);
   } catch (err) {
     console.error("Failed to load ppls.json", err);
     window.ppls = {};
