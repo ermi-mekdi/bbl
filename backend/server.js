@@ -43,11 +43,14 @@ async function writePlc(plc) {
 async function readBblc() {
 	const bblc = JSON.parse(await fs.readFile(dataFileBblc, 'utf8'));
 	if (!Array.isArray(bblc) || bblc.some((book) =>
-		!Array.isArray(book) || book.some((chapter) =>
-			!Array.isArray(chapter) || !chapter[0] || typeof chapter[0] !== 'object' || Array.isArray(chapter[0])
+		!Array.isArray(book) || !book[0] || typeof book[0] !== 'object' || Array.isArray(book[0]) ||
+		book.slice(1).some((chapter) =>
+			!Array.isArray(chapter) || chapter.some((record) =>
+				!record || typeof record !== 'object' || Array.isArray(record)
+			)
 		)
 	)) {
-		throw new Error('bblc.json must contain books with arrays of chapters');
+		throw new Error('bblc.json must contain books with metadata followed by arrays of chapters');
 	}
 	return bblc;
 }
@@ -94,8 +97,10 @@ app.put('/api/admin/bblc/:book/:chapter/:verse', async (req, res) => {
 	}
 
 	const bblc = await readBblc();
-	const chapter = bblc[bookIndex] && bblc[bookIndex][chapterIndex];
-	if (!chapter || verseIndex < 1 || verseIndex >= chapter.length) {
+	const chapter = bookIndex >= 0 && chapterIndex >= 0
+		? bblc[bookIndex]?.[chapterIndex + 1]
+		: null;
+	if (!Array.isArray(chapter) || verseIndex < 1 || verseIndex >= chapter.length) {
 		return res.status(404).json({ error: 'Verse not found.' });
 	}
 

@@ -269,3 +269,16 @@ u {
   font-size: smaller;
   padding: 3px;
 }
+select {
+  appearance: base-select;
+  min-width: 150px;
+  border:2px solid #6a6e75;
+}
+::picker(select){
+  appearance: base-select;
+  background-color: #b3a88a;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: auto;
+  box-shadow: 0 0 20px rgba(39, 35, 35, 0.5) inset;
+}
