@@ -73,10 +73,12 @@ async function dChapter(targetId, path) {
     console.warn("dChapter: chapter not found:", path);
     return;
   }
+  
   const html = chapterEntries
     .map((entry) => {
       if (typeof entry?.d !== "string") return "";
       if (entry.nn === undefined) return entry.d;
+      
       return `<div class="verse-row"><span class="number">${entry.nn}</span> ${entry.d}</div>`;
     })
     .join("");
