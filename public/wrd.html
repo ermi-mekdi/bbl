@@ -28,28 +28,26 @@
     
     </div>
     <script>
-      const pplListEl = document.querySelector('.js-pplList');
+      const wrdListEl = document.querySelector('.js-pplList');
       const detailEl = document.querySelector('.js-pplDetail');
-      let pplArray = []; // Declare outside for access in search
+      let wrdArray = []; // Declare outside for access in search
 
-      function disPlc(p) {
-        const title = p.title ? p.title.map((item) => `<li>${item}</li>`).join('') : '';
-        const info = p.info ? p.info.map((item) => `<li>${item}</li>`).join('') : '';
-        const vers = p.ver ? p.ver.map((item) => `<li>${item}</li>`).join('') : '';
-        const gMap = p.gMap ? `<a href="${p.gMap}" target="_blank">Map</a>` : '';
+      function disWrd(wrd) {
+        const q = wrd.id
+        const t = wrd.d
         detailEl.innerHTML = `
-        <h4> ${p.value} </h4>
-        <h4> ${p.d} </h4>
+        <h4> ${q} </h4>
+        <h4> ${t} </h4>
         
         `;
-        console.log('Displaying details for:', p.value);
+        console.log('Displaying details for:', wrd);
       }
       
-      fetch('../data/word.json')
+      fetch('../data/nword.json')
         .then(r => r.json())
         .then(data => {
-          pplArray = Array.isArray(data) ? data : Object.values(data);
-          renderList(pplArray);          
+          wrdArray = Array.isArray(data) ? data : Object.values(data);
+          renderList(wrdArray);          
           console.log('Word data loaded:', data);
         })
         .catch(err => {
@@ -57,16 +55,16 @@
         });
 
       function renderList(list) {
-        pplListEl.innerHTML = '';
+        wrdListEl.innerHTML = '';
         list.forEach(wrd => {
           if (!wrd) return;
           const li = document.createElement('li');
           li.style.cursor = 'pointer';
-          li.textContent = wrd ? `${Object.keys(wrd)}: ${wrd.value}` : 'Unknown';
+          li.textContent = wrd ? ` ${wrd.id}` : 'Unknown';
           li.addEventListener('click', () => {
-            disPlc(wrd);
+            disWrd(wrd);
           });
-          pplListEl.appendChild(li);
+          wrdListEl.appendChild(li);
         });
       }
 
@@ -82,14 +80,14 @@
       function performSearch() {
         const query = searchInput.value.toLowerCase().trim();
         if (query === '') {
-          renderList(pplArray);
+          renderList(wrdArray);
         } else {
-          const filtered = pplArray.filter(person => {
-            if (!person) return false;
-            const name1 = (person || '').toLowerCase();
-            const name2 = (person.d || '').toLowerCase();
+          const filtered = wrdArray.filter(wrd => {
+            if (!wrd) return false;
+            const name1 = (wrd.id || '').toLowerCase();
             
-            return name1.includes(query) || name2.includes(query) || nameE1.includes(query) || name.includes(query);
+            
+            return name1.includes(query) 
           });
           renderList(filtered);
         }
