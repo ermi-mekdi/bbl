@@ -737,7 +737,20 @@
     "nameE2": "",
     "nameM2": "",
     "vers": [
-      ""
+      "act8v40",
+      "act9v30",
+      "act10v1",
+      "act10v24",
+      "act11v11",
+      "act12v19",
+      "act18v22",
+      "act21v8",
+      "act21v16",
+      "act23;23",
+      "act25v1",
+      "act25v4",
+      "act25v6",
+      "act25v13"
     ],
     "gMap": "../assets/actsIsrael.jpg",
     "info": [
@@ -900,9 +913,9 @@
     "nameE2": "",
     "nameM2": "",
     "vers": [
-      "n.act.c12.v20",
-      "n.mat.c11.v21",
-      "n.mat.c15.v21"
+      "act12v20",
+      "mat11v21",
+      "mat15v21"
     ],
     "gMap": "../assets/actsIsrael.jpg",
     "info": [
@@ -918,7 +931,7 @@
     "nameE2": "",
     "nameM2": "",
     "vers": [
-      "n.act.c12.v20"
+      "act12v20"
     ],
     "gMap": "../assets/actsIsrael.jpg",
     "info": [

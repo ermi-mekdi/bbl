@@ -1,46 +1,54 @@
 // Woman   &#128105; Man  &#128104; locatie 📍 book  &#128213;
 //  896 8361 7469     803837
 
+const projectDataUrl = new URL("./data/", document.currentScript.src);
+
 window.ppls = null;
-(async function load() {
+window.pplsReady = (async function load() {
   try {
-    const res = await fetch("../data/ppls.json");
+    const res = await fetch(new URL("ppls.json", projectDataUrl));
     if (!res.ok) throw new Error(res.status);
     window.ppls = await res.json();
     //console.log("ppls loaded", window.ppls);
+    return window.ppls;
   } catch (err) {
     console.error("Failed to load ppls.json", err);
     window.ppls = {};
+    return window.ppls;
   }
 })();
 window.ver = null;
-(async function load() {
+window.verReady = (async function load() {
   try {
-    const res = await fetch("../data/ver.json");
+    const res = await fetch(new URL("ver.json", projectDataUrl));
     if (!res.ok) throw new Error(res.status);
     window.ver = await res.json();
     //console.log("vers loaded", window.ver);
+    return window.ver;
   } catch (err) {
     console.error("Failed to load vers.json", err);
     window.ver = {};
+    return window.ver;
   }
 })();
 window.plc = null;
-(async function load() {
+window.plcReady = (async function load() {
   try {
-    const res = await fetch("../data/plc.json");
+    const res = await fetch(new URL("plc.json", projectDataUrl));
     if (!res.ok) throw new Error(res.status);
     window.plc = await res.json();
     //console.log("vers loaded", window.word);
+    return window.plc;
   } catch (err) {
     console.error("Failed to load plc.json", err);
     window.plc = {};
+    return window.plc;
   }
 })();
 window.word = null;
 (async function load() {
   try {
-    const res = await fetch("../data/word.json");
+    const res = await fetch(new URL("word.json", projectDataUrl));
     if (!res.ok) throw new Error(res.status);
     window.word = await res.json();
     //console.log("vers loaded", window.word);

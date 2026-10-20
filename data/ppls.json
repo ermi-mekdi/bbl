@@ -1601,7 +1601,7 @@
     "nameE2": "",
     "nameM2": "",
     "vers": [
-      "n.act.c12.v12"
+      "act12v12"
     ],
     "title": [
       ""
@@ -1623,8 +1623,9 @@
     "nameE2": "",
     "nameM2": "",
     "vers": [
-      "n.act.c12.v12",
-      "n.act.c12.v25"
+      "act12v12",
+      "act12v25",
+      "col4v10"
     ],
     "title": [
       "ወንጌላዊ"
@@ -1646,7 +1647,7 @@
     "nameE2": "",
     "nameM2": "",
     "vers": [
-      "n.act.c12.v1"
+      "act12v1"
     ],
     "title": [
       "ኣማሓዳሪ ይሁዳን ሰማርያን"
@@ -1719,8 +1720,8 @@
     "nameE2": "",
     "nameM2": "",
     "vers": [
-      "n.act.c12.v13",
-      "n.act.c12.v14"
+      "act12v13",
+      "act12v14"
     ],
     "title": [
       "ግዝእቲ"
@@ -1742,7 +1743,7 @@
     "nameE2": "",
     "nameM2": "",
     "vers": [
-      "n.act.c12.v17"
+      "act12v17"
     ],
     "title": [
       "ሃዋርያ",
