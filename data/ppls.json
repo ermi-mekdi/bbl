@@ -1800,5 +1800,51 @@
       ""
     ],
     "man": true
+  },
+  {
+    "id": "simeonNiger",
+    "name1": "ስምኦን",
+    "nameE1": "Simeon",
+    "nameM1": "ዝተሰምዐ",
+    "name2": "ኔጌር",
+    "nameE2": "Niger",
+    "nameM2": "ጸሊም",
+    "vers": [
+      ""
+    ],
+    "title": [ "" ],
+    "adres": ["ኣንጾክያ"],
+    "info": [""],
+    "man": true
+  },
+  {
+    "id": "luciusCyrene",
+    "name1": "ሉክዮስ",
+    "nameE1": "Lucius",
+    "nameM1": "ብርሃን ብላቲን",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      ""
+    ],
+    "title": [ "" ],
+    "adres": ["ኣንጾክያ", "ቄሬና"],
+    "info": [""],
+    "man": true
+  },
+  {
+    "id": "manaenHerod",
+    "name1": "ማናይን",
+    "nameE1": "Manaen",
+    "nameM1": "መጸናንዒ/መኻሪ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [ ""],
+    "title": [ "" ],
+    "adres": ["ኣንጾክያ"],
+    "info": [""],
+    "man": true
   }
 ]
