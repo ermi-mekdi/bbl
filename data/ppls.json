@@ -1367,9 +1367,10 @@
     "nameE2": "Paul",
     "nameM2": "ትሑት",
     "vers": [
-      "n.act.c9.v11",
-      "n.act.c9.v30",
-      "n.act.c21.v39"
+      "act9v11",
+      "act9v30",
+      "act13v9",
+      "act21v39"
     ],
     "title": [
       "ሃዋርያ",
@@ -1812,9 +1813,15 @@
     "vers": [
       ""
     ],
-    "title": [ "" ],
-    "adres": ["ኣንጾክያ"],
-    "info": [""],
+    "title": [
+      ""
+    ],
+    "adres": [
+      "ኣንጾክያ"
+    ],
+    "info": [
+      ""
+    ],
     "man": true
   },
   {
@@ -1828,9 +1835,16 @@
     "vers": [
       ""
     ],
-    "title": [ "" ],
-    "adres": ["ኣንጾክያ", "ቄሬና"],
-    "info": [""],
+    "title": [
+      ""
+    ],
+    "adres": [
+      "ኣንጾክያ",
+      "ቄሬና"
+    ],
+    "info": [
+      ""
+    ],
     "man": true
   },
   {
@@ -1841,10 +1855,86 @@
     "name2": "",
     "nameE2": "",
     "nameM2": "",
-    "vers": [ ""],
-    "title": [ "" ],
-    "adres": ["ኣንጾክያ"],
-    "info": [""],
+    "vers": [
+      ""
+    ],
+    "title": [
+      ""
+    ],
+    "adres": [
+      "ኣንጾክያ"
+    ],
+    "info": [
+      "ምስ <strong onclick=\"oP('herodGalilee')\" class=\"hy\">ሄሮድስ</strong> ብዓል ርባዕ ሽመት ዝዐበየ"
+    ],
+    "man": true
+  },
+  {
+    "id": "manaenHerod",
+    "name1": "ማናይን",
+    "nameE1": "Manaen",
+    "nameM1": "መጸናንዒ/መኻሪ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      ""
+    ],
+    "title": [
+      ""
+    ],
+    "adres": [
+      "ኣንጾክያ"
+    ],
+    "info": [
+      "ምስ <strong onclick=\"oP('herodGalilee')\" class=\"hy\">ሄሮድስ</strong> ብዓል ርባዕ ሽመት ዝዐበየ"
+    ],
+    "man": true
+  },
+  {
+    "id": "barJesus",
+    "name1": "ባርየሱስ",
+    "nameE1": "Bar Jesus",
+    "nameM1": "ወዲ መድሓኒ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      "act13v6"
+    ],
+    "title": [
+      "ጠንቋሊ፡ ነብዪ ሓሶት"
+    ],
+    "adres": [
+      "ጳፎስ"
+    ],
+    "info": [
+      "ኣይሁዳዊ ሰብኣይ",
+      "ምስለኔ ኻብ ምእማን ኪመልሶ ደልዩንሳውልን ንበርናባስን ተቓወሞም"
+    ],
+    "man": true
+  },
+  {
+    "id": "sergiusPaulus",
+    "name1": "ስርግዮስ ጳውሎስ",
+    "nameE1": "Sergius Paulus",
+    "nameM1": "ትሑት ወይ ንእሽቶ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      "act13v7"
+    ],
+    "title": [
+      "ምስለኔ"
+    ],
+    "adres": [
+      "ቆጵሮስ"
+    ],
+    "info": [
+      "ሮማዊ ገዛኢ",
+      "ስርግዮስ ናይ ሮማውያ ዓሌት ስም እዩ"
+    ],
     "man": true
   }
 ]

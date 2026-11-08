@@ -937,5 +937,54 @@
     "info": [
       ""
     ]
+  },
+  {
+    "id": "seleucia",
+    "name1": "ሴሌውቅያ",
+    "nameE1": "Seleucia",
+    "nameM1": "ናይ ሰሌውኩስ(Seleucus)",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      "act13v4"
+    ],
+    "gMap": "../assets/grtr.jpg",
+    "info": [
+      "ሰሌውኩስ(Seleucus) ንጉስ ወይ መስራቲ ናይዛ ከተማ",
+      "ወደባዊት ከተማ"
+    ]
+  },
+  {
+    "id": "salamis",
+    "name1": "ሴሌውቅያ",
+    "nameE1": "Salamis",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      "act13v5"
+    ],
+    "gMap": "../assets/grtr.jpg",
+    "info": [
+      ""
+    ]
+  },
+  {
+    "id": "paphos",
+    "name1": "ጳፎስ",
+    "nameE1": "Paphos",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      "act13v6"
+    ],
+    "gMap": "../assets/grtr.jpg",
+    "info": [
+      ""
+    ]
   }
 ]
