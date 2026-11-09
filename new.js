@@ -292,3 +292,91 @@ async function oPlc(p) {
   <button class="xbtn" onclick="de()">Close</button>
   `;
 }
+
+function indexBblEntries(data) {
+  const entriesById = new Map();
+  const collect = (items, chapterId = null) => {
+    if (Array.isArray(items)) {
+      const heading = items[0];
+      const currentChapterId =
+        heading && typeof heading === "object" &&
+        heading.c !== undefined && typeof heading.id === "string"
+          ? heading.id
+          : chapterId;
+      items.forEach((item) => collect(item, currentChapterId));
+      return;
+    }
+
+    if (!items || typeof items !== "object") return;
+    if (typeof items.id === "string") {
+      entriesById.set(items.id, items);
+    } else if (chapterId && typeof items.nn === "string") {
+      const verseNumber = /^(\d+)/.exec(items.nn)?.[1];
+      if (verseNumber) entriesById.set(`${chapterId}v${verseNumber}`, items);
+    }
+  };
+
+  collect(data);
+  return entriesById;
+}
+
+function getBblEntryByPath(path, entriesById) {
+  if (typeof path !== "string") return null;
+  const entry = entriesById.get(path);
+  if (entry) return entry;
+
+  const bookMatch = /^([a-z0-9]+)\.b$/i.exec(path);
+  if (bookMatch) return entriesById.get(`${bookMatch[1]}0`) ?? null;
+
+  const chapterMatch = /^([a-z]+)(\d+)\.?c$/i.exec(path);
+  if (chapterMatch) {
+    return entriesById.get(`${chapterMatch[1]}${chapterMatch[2]}`) ?? null;
+  }
+  return null;
+}
+
+function getLegacyVerseByPath(path) {
+  if (typeof path !== "string" || typeof getVerseByPath !== "function") return null;
+
+  const bookMatch = /^([a-z0-9]+)\.b$/i.exec(path);
+  if (bookMatch) return getVerseByPath(`o.${bookMatch[1]}.b`);
+
+  const chapterMatch = /^([a-z]+)(\d+)\.?c$/i.exec(path);
+  if (chapterMatch) {
+    return getVerseByPath(`o.${chapterMatch[1]}.c${chapterMatch[2]}`);
+  }
+
+  const verseMatch = /^([a-z]+)(\d+)v(\d+)$/i.exec(path);
+  if (verseMatch) {
+    return getVerseByPath(
+      `o.${verseMatch[1]}.c${verseMatch[2]}.v${verseMatch[3]}`,
+    );
+  }
+  return getVerseByPath(path);
+}
+
+async function oZ(h, s) {
+  if (!Array.isArray(h) || !Array.isArray(s)) {
+    console.warn("oZ: h and s should be arrays, got:", h, s);
+    return;
+  }
+
+  const data = await (window.bblReady ?? Promise.resolve(window.bbl));
+  if (window.verReady) await window.verReady;
+  const entriesById = indexBblEntries(data);
+  const resolvePath = (path) =>
+    getBblEntryByPath(path, entriesById) ?? getLegacyVerseByPath(path);
+  const head = h.map(resolvePath).filter((entry) => entry);
+  const story = s.map(resolvePath).filter((entry) => entry);
+
+  if (head.length === 0) {
+    console.warn("No verses found for paths:", h);
+    return;
+  }
+  if (story.length === 0) {
+    console.warn("No verses found for paths:", s);
+    return;
+  }
+
+  zanta(head, story);
+}

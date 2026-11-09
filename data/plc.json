@@ -400,7 +400,7 @@
     "vers": [
       ""
     ],
-    "gMap": "../assets/acts1.jpg",
+    "gMap": "../assets/grtr.jpg",
     "info": [
       ""
     ]
@@ -985,6 +985,54 @@
     "gMap": "../assets/grtr.jpg",
     "info": [
       ""
+    ]
+  },
+  {
+    "id": "pergaPamphylia",
+    "name1": "ጴርጌ",
+    "nameE1": "Perga Pamphylia",
+    "nameM1": "መሬታዊ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      "act13v13"
+    ],
+    "gMap": "../assets/grtr.jpg",
+    "info": [
+      "ወደባዊት ከተማ ኣብ ዞባ ጶምፍልያ"
+    ]
+  },
+  {
+    "id": "antiochPisidia",
+    "name1": "ኣንጾክያ ናይ ጳሲድያ",
+    "nameE1": "Antioch",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      "act13v14"
+    ],
+    "gMap": "../assets/grtr.jpg",
+    "info": [
+      ""
+    ]
+  },
+  {
+    "id": "iconium",
+    "name1": "ኣንጾክያ ናይ ጳሲድያ",
+    "nameE1": "Iconium",
+    "nameM1": "ቦታ ስእሊ",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      "act13v51"
+    ],
+    "gMap": "../assets/grtr.jpg",
+    "info": [
+      "located in what is now Konya"
     ]
   }
 ]

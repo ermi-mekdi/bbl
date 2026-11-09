@@ -380,7 +380,15 @@ function zanta(h, s){
   display.classList.add("person");
   display.id = "pdisplay";
   document.body.appendChild(display);
-  const z = h ? h.map((item) => `${item}`).join("") : "";
+  const z = h
+    ? h
+        .map((item) =>
+          item && typeof item === "object"
+            ? item.c ?? item.b ?? item.n ?? item.d ?? ""
+            : item,
+        )
+        .join(" ")
+    : "";
   const s1 = s ? s.map((item) => `<div><span class="number">${item.nn}</span> ${item.d}</div>`).join("") : "";
   display.innerHTML = `
     <div onclick="de()" class="x">X</div> 
