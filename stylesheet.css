@@ -129,6 +129,26 @@ a {
   border-radius: 10px;
   padding-bottom: 5px;
 }
+.dhtb {
+  text-align: center;
+  font-size: 19px;
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+  background-color: rgba(72, 171, 184, 0.948);
+  z-index: 1;
+  position: fixed;
+  top:60%;
+  left: 6%;
+  right: 10%;
+  bottom:10%;/* allow the box to fill available height */
+  overflow: auto; /* enable scrolling when content is taller */
+  -webkit-overflow-scrolling: touch; /* for smooth scrolling on mobile */
+  box-sizing: border-box;
+  border: none;
+  border-radius: 15px;
+  padding-bottom: 5px;
+}
 .plc {
   text-align: center;
   font-size: 20px;
@@ -281,4 +301,11 @@ select {
   margin-top: 5px;
   padding: auto;
   box-shadow: 0 0 20px rgba(39, 35, 35, 0.5) inset;
+}
+.ntb{
+  background-color: rgb(9, 166, 205);
+  color: rgba(239, 231, 231, 0.921);
+  padding: 2px;
+  border-radius: 3px;
+  font-size: 15px;
 }

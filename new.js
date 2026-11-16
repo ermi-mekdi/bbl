@@ -1,4 +1,5 @@
 window.bbl = null;
+window.htb = null;
 window.bblReady = (async function load() {
   try {
     const res = await fetch("../data/bblc.json");
@@ -9,6 +10,18 @@ window.bblReady = (async function load() {
     console.error("Failed to load bblc.json", err);
     window.bbl = {};
     return window.bbl;
+  }
+})();
+window.htbReady = (async function load() {
+  try {
+    const res = await fetch("../data/htb.json");
+    if (!res.ok) throw new Error(res.status);
+    window.htb = await res.json();
+    return window.htb;
+  } catch (err) {
+    console.error("Failed to load bblc.json", err);
+    window.htb = {};
+    return window.htb;
   }
 })();
 
@@ -81,11 +94,99 @@ async function dChapter(targetId, path) {
       const ref = Array.isArray(entry.ref) && entry.ref.length
         ? `<strong onclick="oV(${JSON.stringify(entry.ref).replace(/"/g, "&quot;")})">📕</strong>`
         : "";
+      const htb = Array.isArray(entry.htb) && entry.htb.length
+        ? `<strong onclick="oHtb(${JSON.stringify(entry.htb).replace(/"/g, "&quot;")})" class="ntb" >ካት</strong>`
+        : ""
       
       return `<div class="verse-row">
             <span class="number">${entry.nn}</span>
             ${entry.d}
             ${ref}
+            ${htb}
+         </div>`;
+    })
+    .join("");
+
+  if (!html) {
+    console.warn("dChapter: no content found for chapter:", path);
+    return;
+  }
+
+  target.innerHTML = html;
+}
+
+async function oChapterHTB(targetId, path) {
+  const target = targetId ? document.getElementById(targetId) : null;
+  if (!target) {
+    console.warn("oHTB: target element not found:", targetId);
+    return;
+  }
+  if (typeof path !== "string") {
+    console.warn("oHTB: path should be a book.chapter string, got:", path);
+    return;
+  }
+
+  const match = /^([a-zA-Z0-9]+)\.(\d+)$/.exec(path.trim());//
+  if (!match) {
+    console.warn("oHTB: invalid path format:", path);
+    return;
+  }
+
+  const [, book, chapter] = match;
+  const data = window.htb ?? await window.htbReady;
+  if (!Array.isArray(data)) {
+    console.warn("oHTB: chapter data is not an array");
+    return;
+  }
+
+  const bookData = data.find(
+    (group) => Array.isArray(group) && group[0]?.id === `${book}0`,
+  );
+  const groups = bookData?.slice(1);
+  if (!Array.isArray(groups)) {
+    console.warn("dChapter: book not found:", book);
+    return;
+  }
+
+  const chapterId = `${book}${chapter}`;
+  const chapterData = groups.find(
+    (entries) => Array.isArray(entries) &&
+      entries[0]?.id === chapterId && String(entries[0].c) === chapter,
+  );
+  let chapterEntries;
+
+  if (chapterData) {
+    chapterEntries = chapterData.slice(1);
+  } else if (groups.every((entry) => !Array.isArray(entry))) {
+    const chapterIndex = groups.findIndex(
+      (entry) => entry?.id === chapterId && String(entry.c) === chapter,
+    );
+    if (chapterIndex !== -1) {
+      const nextChapterIndex = groups.findIndex(
+        (entry, index) => index > chapterIndex && entry?.c !== undefined,
+      );
+      chapterEntries = groups.slice(
+        chapterIndex + 1,
+        nextChapterIndex === -1 ? groups.length : nextChapterIndex,
+      );
+    }
+  }
+
+  if (!chapterEntries) {
+    console.warn("dChapter: chapter not found:", path);
+    return;
+  }
+  
+  const html = chapterEntries
+    .map((entry) => {
+      if (typeof entry?.d !== "string") return "";
+      if (entry.nn === undefined) return entry.d;
+      
+      
+      return `<div class="verse-row">
+            <span class="number">${entry.nn}</span>
+            ${entry.d}
+            
          </div>`;
     })
     .join("");
@@ -137,6 +238,73 @@ async function oV(r) {
 
   versN(verses);
 }
+
+async function oHtb(r) {
+  if (!Array.isArray(r)) {
+    console.warn("HTB: expected an array of verse ids, got:", r);
+    return;
+  }
+  
+  const data = window.htb ?? await window.htbReady;
+  if (!Array.isArray(data)) {
+    console.warn("htb: chapter data is not an array");
+    return;
+  }
+  if (window.verReady) await window.verReady;
+
+  const versesById = new Map();
+  const collectVerses = (items) => {
+    for (const item of items) {
+      if (Array.isArray(item)) {
+        collectVerses(item);
+      } else if (item && typeof item === "object" &&
+          typeof item.id === "string" && typeof item.d === "string") {
+        versesById.set(item.id, item);
+      }
+    }
+  };
+  collectVerses(data);
+
+  const verses = r.map((id) => {
+    if (typeof id !== "string") return null;
+    return versesById.get(id) ??
+      (typeof getVerseByPath === "function" ? getVerseByPath(id) : null);
+  }).filter((verse) => verse && typeof verse === "object");
+
+  if (verses.length === 0) {
+    console.warn("HTB: no verses found for ids:", r);
+    return;
+  }
+
+  vHtb(verses);
+}
+
+function vHtb(t) {
+  
+  const display = document.createElement("div");
+  display.classList.add("dhtb");
+  display.id = "pdisplay";
+  document.body.appendChild(display);
+  
+  
+  const tq = t
+    ? t
+        .map(
+          (item) =>
+            `<li ><h4>ካልኣይ ትርጉም መጽሓፍ ቅዱስ</h4>
+      <h4 class="vdetails">${item.nn} ${item.d}</h4>
+     </li>`,
+        )
+        .join("")
+    : "";
+
+  display.innerHTML = `
+    <div onclick="de()" class="x">X</div> 
+    ${tq}
+    <button class="xbtn" onclick="de()">Close</button>
+    `;
+}
+
 function versN(t) {
   const display = document.createElement("div");
   display.classList.add("person");
@@ -160,6 +328,7 @@ function versN(t) {
     <button class="xbtn" onclick="de()">Close</button>
     `;
 }
+
 async function selectedvers(r){
   if (!Array.isArray(r)) {
     console.warn("selectedvers: expected an array of verse ids, got:", r);
@@ -200,6 +369,7 @@ async function selectedvers(r){
   return versP(verses);
   
 }
+
 async function oP(p) {
   const ppls = await (window.pplsReady ?? Promise.resolve(window.ppls));
   const person = typeof p === "string"
@@ -251,6 +421,7 @@ async function oP(p) {
   <button class="xbtn" onclick="de()">Close</button>
   `;
 }
+
 async function oPlc(p) {
   const plc = await (window.plcReady ?? Promise.resolve(window.plc));
   
