@@ -1021,16 +1021,38 @@
   },
   {
     "id": "iconium",
-    "name1": "ኣንጾክያ ናይ ጳሲድያ",
+    "name1": "ኢቆንዮም",
     "nameE1": "Iconium",
     "nameM1": "ቦታ ስእሊ",
     "name2": "",
     "nameE2": "",
     "nameM2": "",
-    "vers": ["act13v51"],
+    "vers": [
+      "act13v51"
+    ],
     "gMap": "../assets/grtr.jpg",
     "info": [
-      "located in what is now Konya"
+      "located in what is now Konya",
+      "ኣብ ዞባ ጲስድያ ትርከብ"
+    ]
+  },
+  {
+    "id": "canaan",
+    "name1": "ከንኣን",
+    "nameE1": "Canaan",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      "exo3v8",
+      "lev18v24",
+      "lev18v25"
+    ],
+    "gMap": "../assets/exodos.jpg",
+    "info": [
+      "ቦታ ኸነኣናውያንን ሄታውያንን ኣሞራውያንን ፈረዛውያንን ሃዋውያንን ይቡሳውያንን",
+      "ከንኣን ሓደ ካብ ደቂ ካም እዩ"
     ]
   }
 ]

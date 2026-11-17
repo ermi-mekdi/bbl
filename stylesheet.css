@@ -303,8 +303,8 @@ select {
   box-shadow: 0 0 20px rgba(39, 35, 35, 0.5) inset;
 }
 .ntb{
-  background-color: rgb(9, 166, 205);
-  color: rgba(239, 231, 231, 0.921);
+  background-color: rgba(5, 141, 175, 0.808);
+  color: rgba(239, 231, 231, 0.818);
   padding: 2px;
   border-radius: 3px;
   font-size: 15px;

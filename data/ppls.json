@@ -1936,5 +1936,50 @@
       "ስርግዮስ ናይ ሮማውያ ዓሌት ስም እዩ"
     ],
     "man": true
+  },
+  {
+    "id": "samuelPro",
+    "name1": "ሳሙኤል",
+    "nameE1": "Samuel",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      ""
+    ],
+    "title": [
+      "ነብዪ"
+    ],
+    "adres": [
+      ""
+    ],
+    "info": [
+      ""
+    ],
+    "man": true
+  },
+  {
+    "id": "saulKish",
+    "name1": "ሳኦል",
+    "nameE1": "Saul",
+    "nameM1": "",
+    "name2": "",
+    "nameE2": "",
+    "nameM2": "",
+    "vers": [
+      ""
+    ],
+    "title": [
+      "ንጉስ"
+    ],
+    "adres": [
+      ""
+    ],
+    "info": [
+      "ነርብዓ ዓመት ነጊሱ",
+      "ካብ ነገድ ብንያም"
+    ],
+    "man": true
   }
 ]
